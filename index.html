@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ibloud — Loptr Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --surface-2: #18181f;
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.15);
+    --text: #e8e8f0;
+    --text-muted: #6b6b80;
+    --text-dim: #9a9aac;
+    --accent: #7c6af7;
+    --accent-glow: rgba(124,106,247,0.15);
+    --accent-2: #c86dd7;
+    --gold: #d4a843;
+    --green: #3dba7a;
+    --red: #d45a5a;
+    --mono: 'Space Mono', monospace;
+    --sans: 'Space Grotesk', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+  .nav-logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--text); }
+
+  /* LAYOUT */
+  main { padding-top: 60px; }
+  section { padding: 6rem 2rem; max-width: 960px; margin: 0 auto; }
+  .section-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+    max-width: 120px;
+  }
+
+  /* HERO */
+  #hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    max-width: 960px;
+  }
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 300;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+  }
+  h1 em {
+    font-style: normal;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-sub {
+    font-size: 1.1rem;
+    color: var(--text-dim);
+    max-width: 540px;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+  .hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 0.3rem 0.75rem;
+    border: 1px solid var(--border-strong);
+    border-radius: 3px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+  .tag.accent { border-color: rgba(124,106,247,0.4); color: var(--accent); }
+
+  /* ANALYSIS SECTION */
+  .analysis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+  .analysis-cell {
+    background: var(--surface);
+    padding: 1.75rem;
+  }
+  .analysis-cell.full { grid-column: 1 / -1; }
+  .cell-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .cell-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .cell-body {
+    font-size: 0.875rem;
+    color: var(--text-dim);
+    line-height: 1.65;
+  }
+  .status-dot {
+    display: inline-block;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+  }
+  .dot-green { background: var(--green); box-shadow: 0 0 6px var(--green); }
+  .dot-red { background: var(--red); box-shadow: 0 0 6px var(--red); }
+
+  /* TABLE */
+  .checklist {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+  }
+  .checklist thead th {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .checklist tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  .checklist tbody tr:hover { background: var(--surface-2); }
+  .checklist tbody tr:last-child { border-bottom: none; }
+  .checklist td {
+    padding: 0.75rem;
+    color: var(--text-dim);
+    vertical-align: top;
+  }
+  .checklist td:first-child { color: var(--text); font-weight: 500; }
+  .check-yes { color: var(--green); font-family: var(--mono); font-size: 12px; }
+  .check-no { color: var(--red); font-family: var(--mono); font-size: 12px; }
+  .action-text { font-size: 0.8rem; }
+
+  /* STRATEGY SECTION */
+  .strategy-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .strategy-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.75rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .strategy-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+  .strategy-card.web::before { background: var(--accent); }
+  .strategy-card.ue::before { background: var(--accent-2); }
+  .strategy-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+  }
+  .strategy-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .strategy-items { list-style: none; }
+  .strategy-items li {
+    font-size: 0.875rem;
+    color: var(--text-dim);
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+  }
+  .strategy-items li:last-child { border-bottom: none; }
+  .strategy-items li::before {
+    content: '→';
+    color: var(--text-muted);
+    font-family: var(--mono);
+    font-size: 11px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* ABOUT */
+  .about-inner {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 4rem;
+    align-items: start;
+  }
+  .about-text h2 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
+  }
+  .about-text p {
+    color: var(--text-dim);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+  .about-links { display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .about-link {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    border: 1px solid rgba(124,106,247,0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    transition: all 0.2s;
+    letter-spacing: 0.04em;
+  }
+  .about-link:hover {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+  }
+  .repos-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .repos-header {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+    letter-spacing: 0.06em;
+  }
+  .repo-item {
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .repo-item:last-child { border-bottom: none; }
+  .repo-name {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+  }
+  .repo-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+  }
+  footer span { color: var(--accent); }
+
+  @media (max-width: 680px) {
+    nav { padding: 1rem; }
+    .nav-links { gap: 1rem; }
+    section { padding: 4rem 1.25rem; }
+    .analysis-grid { grid-template-columns: 1fr; }
+    .analysis-cell.full { grid-column: auto; }
+    .strategy-cols { grid-template-columns: 1fr; }
+    .about-inner { grid-template-columns: 1fr; }
+    .repos-panel { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><span>ibloud</span> / Loptr Lab</div>
+  <ul class="nav-links">
+    <li><a href="#analysis">Analysis</a></li>
+    <li><a href="#strategy">Strategy</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="https://github.com/ibloud" target="_blank">GitHub ↗</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero">
+    <p class="hero-eyebrow">// RETURN TO THE VOID — rtn2thevoid</p>
+    <h1>Open-source<br><em>game architecture</em><br>meets Paragon's legacy.</h1>
+    <p class="hero-sub">
+      A technical roadmap for building a modular MOBA framework using Epic's released Paragon assets,
+      a custom card/tarot system, and a browser-native WebGL companion layer.
+    </p>
+    <div class="hero-tags">
+      <span class="tag accent">veiled-dominion-engine</span>
+      <span class="tag">WebGL</span>
+      <span class="tag">Unreal Engine 5</span>
+      <span class="tag">Paragon Assets</span>
+      <span class="tag">Gameplay Ability System</span>
+      <span class="tag">Open Source</span>
+    </div>
+  </section>
+
+  <!-- ANALYSIS -->
+  <section id="analysis">
+    <div class="section-label">Engine Evaluation</div>
+
+    <div class="analysis-grid">
+      <div class="analysis-cell">
+        <div class="cell-label">Usable Now</div>
+        <div class="cell-title">WebGL Rendering Pipeline</div>
+        <div class="cell-body">
+          Browser-native WebGL runtime immediately applicable for lightweight hero visualizers,
+          3D card inspection tools, and tactical prototypes — no Unreal download required.
+        </div>
+      </div>
+      <div class="analysis-cell">
+        <div class="cell-label">Usable Now</div>
+        <div class="cell-title">Turn / State Logic Framework</div>
+        <div class="cell-body">
+          Core state management maps cleanly to card activation systems, tarot-style rules,
+          and Duet chess mechanics. Turn order and state sync are ready to reuse.
+        </div>
+      </div>
+      <div class="analysis-cell">
+        <div class="cell-label">Usable Now</div>
+        <div class="cell-title">Lightweight Asset Loading</div>
+        <div class="cell-body">
+          Asset ingestion routines handle lower-poly models, textures, and UI overlays well —
+          ideal for web frontends and companion apps hosted on LoptrLab.com.
+        </div>
+      </div>
+      <div class="analysis-cell">
+        <div class="cell-label">Gap — Requires UE5</div>
+        <div class="cell-title">High-Fidelity Paragon Assets</div>
+        <div class="cell-body">
+          Epic's 39+ hero packages (Skeletal Meshes, Niagara VFX, Animation Blueprints) exceed
+          browser memory limits without significant poly-reduction and shader rewrites.
+        </div>
+      </div>
+      <div class="analysis-cell full">
+        <div class="cell-label">Gap — Must Build</div>
+        <div class="cell-title">Network Replication & Real-Time Physics</div>
+        <div class="cell-body">
+          High-tickrate client-side prediction, server reconciliation, and continuous 3D collision
+          detection are native to Unreal Engine — not present in the current web engine.
+          These must be authored from scratch for a full 3v3+ action game.
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKLIST TABLE -->
+    <table class="checklist">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Epic's Assets</th>
+          <th>Action Required</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3D Hero Models & Rigging</td>
+          <td><span class="check-yes"><span class="status-dot dot-green"></span>YES</span></td>
+          <td class="action-text">Ready to import in Unreal Engine</td>
+        </tr>
+        <tr>
+          <td>Hero Animations & VFX</td>
+          <td><span class="check-yes"><span class="status-dot dot-green"></span>YES</span></td>
+          <td class="action-text">Built into character packages</td>
+        </tr>
+        <tr>
+          <td>Environment & Props</td>
+          <td><span class="check-yes"><span class="status-dot dot-green"></span>YES</span></td>
+          <td class="action-text">Agora / Monolith packs on Fab (1,500+ assets)</td>
+        </tr>
+        <tr>
+          <td>Card UI / 2D Tarot Art</td>
+          <td><span class="check-no"><span class="status-dot dot-red"></span>NO</span></td>
+          <td class="action-text">Custom 2D illustration & UI frame design required</td>
+        </tr>
+        <tr>
+          <td>Core Game Code & GAS</td>
+          <td><span class="check-no"><span class="status-dot dot-red"></span>NO</span></td>
+          <td class="action-text">C++ / Blueprint architecture from scratch</td>
+        </tr>
+        <tr>
+          <td>Card Engine / Deck Logic</td>
+          <td><span class="check-no"><span class="status-dot dot-red"></span>NO</span></td>
+          <td class="action-text">Custom data tables & blueprint mechanics</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- STRATEGY -->
+  <section id="strategy">
+    <div class="section-label">Integration Strategy</div>
+
+    <div class="strategy-cols">
+      <div class="strategy-card web">
+        <div class="strategy-num">LAYER 01 — WEB</div>
+        <div class="strategy-title">veiled-dominion-engine</div>
+        <ul class="strategy-items">
+          <li>Interactive Deck Builder & Lore Viewer with 3D hero card inspection</li>
+          <li>Rapid prototype for game rules, card interactions, and tactical logic</li>
+          <li>Companion app integration at LoptrLab.com</li>
+          <li>Validate C++ port targets before Unreal migration</li>
+        </ul>
+      </div>
+      <div class="strategy-card ue">
+        <div class="strategy-num">LAYER 02 — UNREAL ENGINE 5</div>
+        <div class="strategy-title">Core 3D Action Game</div>
+        <ul class="strategy-items">
+          <li>Pre-rigged Paragon hero files, imported and configured via GAS</li>
+          <li>Niagara visual effects from Epic's ability packages</li>
+          <li>Network replication & physics via Unreal's native systems</li>
+          <li>Clean C++ module architecture for open-source contribution</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top: 2rem; padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; border-left: 3px solid var(--accent);">
+      <div class="cell-label">Design System Note</div>
+      <p style="font-size: 0.875rem; color: var(--text-dim); line-height: 1.7;">
+        The card & tarot system — inspired by Rider-Waite structure and <em>Mage: The Ascension</em> archetypes —
+        requires custom 2D illustration, UI frame design, and Blueprint mechanics to manage deck states,
+        card draws, and passive/active abilities. Epic provided the 3D world; the card layer is original IP.
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">About</div>
+    <div class="about-inner">
+      <div class="about-text">
+        <h2>Dominique — ibloud</h2>
+        <p>
+          Independent creative technologist running Loptr Lab and Urban Alien Adventures.
+          Working at the intersection of game design, modular engine architecture,
+          and worldbuilding — with a focus on building systems that can be contributed to
+          and extended by a community.
+        </p>
+        <p>
+          The <em>Return to the Void</em> project merges an open-source MOBA framework
+          with a custom character deck system — drawing on clean code principles
+          (Clean Coders, Tom Looman's Unreal tutorials) and open collaboration.
+          The visual foundation is Epic's released Paragon hero packages.
+          The architecture, card system, and narrative layer are built here.
+        </p>
+        <div class="about-links">
+          <a class="about-link" href="https://github.com/ibloud" target="_blank">github.com/ibloud</a>
+          <a class="about-link" href="https://github.com/Loptr-Lab/veiled-dominion-engine" target="_blank">veiled-dominion-engine</a>
+          <a class="about-link" href="https://github.com/ibloud/violets-revenge" target="_blank">violet's revenge</a>
+        </div>
+      </div>
+      <div class="repos-panel">
+        <div class="repos-header">ACTIVE REPOS</div>
+        <div class="repo-item">
+          <div class="repo-name">veiled-dominion-engine</div>
+          <div class="repo-desc">WebGL game engine & Duet 2-player framework</div>
+        </div>
+        <div class="repo-item">
+          <div class="repo-name">violets-revenge</div>
+          <div class="repo-desc">1v4 asymmetric horror — open externship project</div>
+        </div>
+        <div class="repo-item">
+          <div class="repo-name">rtn2thevoid</div>
+          <div class="repo-desc">Return to the Void — Paragon + card system</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p><span>ibloud</span> · Loptr Lab · Urban Alien Adventures · Built for ibloud.github.io</p>
+</footer>
+
+</body>
+</html>
