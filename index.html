@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ibloud — Loptr Lab</title>
+<title>Return to the Void — Project Hub</title>
+<meta name="description" content="Technical roadmap and project hub for Return to the Void, an open-source MOBA concept using Epic's released Paragon assets.">
+<meta name="theme-color" content="#0a0a0f">
+<meta property="og:title" content="Return to the Void — Project Hub">
+<meta property="og:description" content="Roadmap, architecture, and contributor pathways for Return to the Void.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://ibloud.github.io/Paragon-Reborn/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -30,6 +36,12 @@
   }
 
   html { scroll-behavior: smooth; }
+
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
 
   body {
     background: var(--bg);
@@ -355,6 +367,11 @@
   }
   footer span { color: var(--accent); }
 
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; }
+  }
+
   @media (max-width: 680px) {
     nav { padding: 1rem; }
     .nav-links { gap: 1rem; }
@@ -363,7 +380,6 @@
     .analysis-cell.full { grid-column: auto; }
     .strategy-cols { grid-template-columns: 1fr; }
     .about-inner { grid-template-columns: 1fr; }
-    .repos-panel { display: none; }
   }
 </style>
 </head>
@@ -375,7 +391,7 @@
     <li><a href="#analysis">Analysis</a></li>
     <li><a href="#strategy">Strategy</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="https://github.com/ibloud" target="_blank">GitHub ↗</a></li>
+    <li><a href="https://github.com/ibloud" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
   </ul>
 </nav>
 
@@ -386,7 +402,7 @@
     <p class="hero-eyebrow">// RETURN TO THE VOID — rtn2thevoid</p>
     <h1>Open-source<br><em>game architecture</em><br>meets Paragon's legacy.</h1>
     <p class="hero-sub">
-      A technical roadmap for building a modular MOBA framework using Epic's released Paragon assets,
+      A project hub and technical roadmap for a modular MOBA concept using Epic's released Paragon assets,
       a custom card/tarot system, and a browser-native WebGL companion layer.
     </p>
     <div class="hero-tags">
@@ -548,9 +564,9 @@
           The architecture, card system, and narrative layer are built here.
         </p>
         <div class="about-links">
-          <a class="about-link" href="https://github.com/ibloud" target="_blank">github.com/ibloud</a>
-          <a class="about-link" href="https://github.com/Loptr-Lab/veiled-dominion-engine" target="_blank">veiled-dominion-engine</a>
-          <a class="about-link" href="https://github.com/ibloud/violets-revenge" target="_blank">violet's revenge</a>
+          <a class="about-link" href="https://github.com/ibloud" target="_blank" rel="noopener noreferrer">github.com/ibloud</a>
+          <a class="about-link" href="https://github.com/Loptr-Lab/veiled-dominion-engine" target="_blank" rel="noopener noreferrer">veiled-dominion-engine</a>
+          <a class="about-link" href="https://github.com/ibloud/violets-revenge" target="_blank" rel="noopener noreferrer">violet's revenge</a>
         </div>
       </div>
       <div class="repos-panel">
@@ -574,7 +590,7 @@
 </main>
 
 <footer>
-  <p><span>ibloud</span> · Loptr Lab · Urban Alien Adventures · Built for ibloud.github.io</p>
+  <p><span>ibloud</span> · Loptr Lab · Urban Alien Adventures · Project hub · ibloud.github.io</p>
 </footer>
 
 </body>
