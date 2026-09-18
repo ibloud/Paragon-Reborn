@@ -269,6 +269,187 @@ LICENSED MUSIC
 
 The license should cover the actual package the project intends to distribute, not merely permission to "play the song."
 
+
+
+## Digital interactive use: rhythm game vs. standalone adventure
+
+For **50 Ways to Leave Another**, the licensing model should distinguish between simply including a song in a game and making the song an interactive game object.
+
+The U.S. Copyright Office specifically identifies video games as audiovisual works for which incorporating music requires the relevant synchronization and master-use permissions; there is no general compulsory sync/master license for this use. citeturn0search35
+
+### A. Standalone adventure / soundtrack use
+
+If a licensed recording is simply part of the soundtrack of a standalone adventure, the rights package should cover:
+
+- synchronization of the recording with game visuals;
+- master use of the specific recording;
+- in-game playback in the intended scenes, locations, menus, credits, etc.;
+- looping, fading, ducking, or other technical playback changes;
+- loading/caching the audio with the game;
+- the intended platforms;
+- demos, beta builds, review copies, and public releases as applicable;
+- trailers and promotional material if desired;
+- territory and term;
+- credits;
+- updates, patches, DLC, and successor/expanded editions if intended.
+
+The key distinction is that the music is **presentation content**. The player may trigger or encounter it, but the game is not necessarily transforming the recording into a playable rhythm chart.
+
+### B. Rhythm-game use — Clone Hero / Tap Tap-style
+
+If the song becomes a playable chart, the agreement should go beyond ordinary soundtrack language.
+
+The project may need permission to create and distribute game-specific data such as:
+
+- beat and tempo maps;
+- note charts;
+- timing windows;
+- difficulty levels;
+- instrument-specific lanes;
+- score/combo events;
+- practice sections;
+- loop points;
+- preview clips;
+- gameplay-specific edits;
+- stems or separated parts, if used.
+
+The contract should also make clear whether the chart may be distributed **with the recording**, separately from the recording, or both.
+
+A rhythm chart is not itself the copyrighted sound recording, but it is a project-created derivative/content layer built around the musical work. The safe engineering practice is therefore to treat the chart and its relationship to the licensed track as part of the negotiated game use rather than assuming that a normal soundtrack license automatically covers it.
+
+### C. VR rhythm / spatial interaction — Beat Saber-style
+
+A Beat Saber-like implementation adds another layer of interaction.
+
+If the recording is used as the basis for timed VR gameplay, the license should expressly cover:
+
+- synchronized gameplay;
+- beat mapping;
+- timing data;
+- note/object placement;
+- difficulty variants;
+- practice/replay systems;
+- preview clips;
+- any gameplay edits or shortened versions;
+- distribution of the chart/map with the audio;
+- promotional footage showing the song in interactive play.
+
+If the game also spatializes, remixes, stems, or otherwise materially transforms the recording, the agreement should expressly address those operations rather than relying on a generic "game use" sentence.
+
+### D. The important distinction for 50 Ways to Leave Another
+
+For our project, define three separate digital-use modes:
+
+```
+MODE 1 — SOUNDTRACK
+Song
+  ↓
+Game scene / menu / ending
+  ↓
+Player experiences the music
+
+MODE 2 — INTERACTIVE SONG
+Song
+  ↓
+Beat / timing data
+  ↓
+Player acts in synchronization with music
+
+MODE 3 — STANDALONE MUSIC EXPERIENCE
+Song
+  ↓
+Dedicated interactive environment
+  ↓
+Music drives exploration, visuals, events, or progression
+```
+
+Mode 3 matters because a standalone adventure can be more than a conventional soundtrack placement. If the music itself drives visual events, exploration, puzzles, timing, or progression, the agreement should describe those uses specifically.
+
+### E. One license can cover multiple modes — if it says so
+
+There is no reason to create three unrelated licensing programs if an artist is comfortable granting all three.
+
+Instead, the rights schedule can use explicit checkboxes or fields:
+
+| Digital use | Licensed? |
+|---|---|
+| Standalone adventure soundtrack | ☐ |
+| Menu / lobby / credits | ☐ |
+| Gameplay synchronization | ☐ |
+| Rhythm / beat-matching gameplay | ☐ |
+| VR / spatial rhythm gameplay | ☐ |
+| Beat maps / charts | ☐ |
+| Gameplay edits / loops | ☐ |
+| Stems / separated parts | ☐ |
+| Offline / cached game delivery | ☐ |
+| DLC / expansions | ☐ |
+| Trailers / promotional video | ☐ |
+| Livestream / recorded gameplay promotion | ☐ |
+| Demo / beta / review builds | ☐ |
+
+That gives an independent artist a much clearer choice than asking them to sign a blanket "video game rights" clause.
+
+## The 50 Ways digital-rights record
+
+For the 50 Ways project, a track record should therefore contain:
+
+```
+TRACK
+  artist:
+  title:
+  version:
+  ISRC:
+
+RIGHTS HOLDERS
+  master:
+  composition:
+  writers:
+  publisher/admin:
+
+DIGITAL USE
+  soundtrack: yes/no
+  standalone adventure: yes/no
+  rhythm gameplay: yes/no
+  VR/spatial gameplay: yes/no
+  chart/beat-map creation: yes/no
+  stems: yes/no
+  edits/loops: yes/no
+  trailers: yes/no
+  livestream/promotional capture: yes/no
+
+DELIVERY
+  platforms:
+  territory:
+  term:
+  offline/cached:
+  DLC/updates:
+  exclusivity:
+
+BUSINESS
+  fee:
+  royalty/revenue share:
+  reporting:
+  credit:
+
+EVIDENCE
+  signed license:
+  rights confirmations:
+  approved master:
+  approved chart/data:
+```
+
+**Do not let the filename, MP3/WAV, Bandcamp URL, or chart file itself become the rights record.** The rights record is the authority; the media package is the implementation.
+
+## A particularly useful independent-artist offer
+
+For an independent artist, we can make the first conversation unusually simple:
+
+> **Your music stays yours. We are asking for a non-exclusive license for specified digital game uses. You choose whether we may use it as a soundtrack, an interactive/rhythm track, a standalone music experience, promotional material, or some combination. We identify the exact recording, credit you, and keep a rights record.**
+
+That is much more understandable than asking an artist to navigate traditional record-industry terminology before they even know what the project wants to do.
+
+The actual agreement should then convert those choices into legally precise grant language and should be reviewed by qualified counsel before commercial release.
+
 ## Original music is the easiest intake path
 
 The cleanest first catalog is music where the submitting artist can document that they control both:
