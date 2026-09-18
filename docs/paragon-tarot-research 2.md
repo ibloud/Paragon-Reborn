@@ -22,6 +22,8 @@ These are the confirmed technical requirements for the tarot product at MakePlay
 | Minimum order | 1 deck |
 | Product URL | makeplayingcards.com/design/custom-tarot-deck.html |
 
+**Related artifact:** [Paragon Tarot LWB](paragon-tarot-LWB.pdf)
+
 **Design canvas at 300 DPI with bleed:**
 - Width: (2.75" + 0.25" bleed) × 300 = **900px**
 - Height: (4.75" + 0.25" bleed) × 300 = **1,500px**
