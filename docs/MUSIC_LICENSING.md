@@ -244,6 +244,71 @@ CREDIT / REPORTING
 
 This makes licensing an engineering intake process rather than a last-minute legal cleanup.
 
+## Case study: a completed song built entirely online
+
+This case study is included because the project did not depend on people meeting in person. The work was assembled **entirely online, through Discord**. The collaborators did not need to be in the same room, city, or physical studio to establish roles, coordinate production, resolve rights questions, and finish a release.
+
+The case is **Baphometrix — "Returning to the Void — Paragon Homage."** The track is a completed original song released through the artist's music channels. The artist was discovered through Dylan at Producer Dojo, and the subsequent collaboration demonstrates the kind of distributed artist relationship this project wants to make possible.
+
+The artist's creative identity is also useful to the project architecture: Baphometrix is described here as an **artistic second-life character/persona**. That persona is an experiential identity; it should not be confused with the legal person or with ownership of copyrights. Contracts and rights records should always name the actual rights holders and authorized signatories.
+
+### What the collaboration demonstrated
+
+The important result was not simply "we found a song online." The collaboration demonstrated that a distributed team could:
+
+1. identify an artist and a specific work;
+2. discuss how the music might function inside a larger interactive experience;
+3. identify the relevant rights and role questions before treating the music as project property;
+4. establish who was responsible for what;
+5. maintain an understanding that contributors' work is to be properly compensated;
+6. complete the production process remotely;
+7. release a finished song.
+
+The original question that opened the conversation was particularly useful: **where did she see this song in the day of a person’s life?** That moved the discussion from "can we put this track somewhere?" toward the more useful question of what the music actually does in an experience.
+
+The artist's own production description also illustrates why music should be treated as authored work rather than as interchangeable media. A finished professional original can require substantial writing, production, mixing, and mastering time; even alternate/remix versions and precisely timed edits can require meaningful additional work.
+
+### The legal/rights problems we deliberately navigated
+
+This case should not be presented as a claim that every possible music-rights issue was solved by a casual online conversation. The useful point is that the collaboration **recognized and navigated the issues instead of pretending they did not exist**.
+
+The issues included:
+
+- identifying the actual artist and the specific recording;
+- separating the artist's creative persona from the real-world rights holder;
+- distinguishing the composition from the master recording;
+- identifying who was doing which work;
+- making compensation expectations explicit rather than assuming exposure was payment;
+- avoiding the assumption that possession of an audio file equals ownership of the rights;
+- treating the eventual use of the music as something that must be defined rather than assumed;
+- preserving the relationship so that each party understands their role and expects proper compensation for their contribution.
+
+This is the model we want to teach: **rights and compensation are part of production design, not paperwork added after the creative work is finished.**
+
+### What makes this case especially important
+
+According to the project's history, this structure had not been consistently established in the larger project before this effort. The main project team subsequently split into **Fault** and **Predecessor**, while the work continued independently here.
+
+That history matters because the later Paragon ecosystem demonstrates what happened when other teams took the newly available Paragon assets and built independent projects around them. Epic released the first major wave of Paragon assets in March 2018 and a final wave in September 2018, ultimately making $17 million worth of Paragon content available to Unreal Engine developers. citeturn0search0turn0search3
+
+Projects using those assets appeared afterward. **Predecessor** began development after the asset release and was publicly discussed as a Paragon-derived project by early 2019; Epic later described Omeda's project as an independent evolution using the released assets. citeturn1search7turn1search1 **Fault: Elder Orb** was another commercial project using Paragon assets and reached release in 2020. citeturn1search12
+
+The historical lesson for Paragon Reborn is not that any one later project copied or continued the original work. It is that **the release of the assets created a new ecosystem of independent projects**, while the earlier distributed collaboration provides a separate example of how people can organize creative work, rights, roles, and compensation without needing a conventional physical studio.
+
+### The precedent we want to preserve
+
+The case study therefore belongs in this project for a very specific reason:
+
+> **A creative production can be geographically distributed, legally conscious, compensation-aware, and still reach a finished, released work.**
+
+Discord was the working room. The participants were the production network. The song was the deliverable.
+
+That is directly relevant to the participant model proposed for Return to the Void / 50 Ways to Leave Another: people should be able to enter at different skill levels, contribute a defined piece of work, understand what they are responsible for, know what rights they are granting or retaining, and understand how their contribution is compensated.
+
+### Important limitation
+
+This case study is a **documented project-history example and design precedent**, not a substitute for a production music license. It does not establish that Baphometrix has granted Return to the Void or 50 Ways to Leave Another any particular future rights. Any future use of the track in a game, rhythm system, educational representation, trailer, livestream, or other interactive experience still requires the appropriate agreement with the actual rights holders.
+
 ## What the Tap Tap Revenge model teaches us
 
 Historical reporting on Tap Tap Revenge shows why this distinction matters. Tapulous released artist-specific and licensed music content, including a Nine Inch Nails edition and later downloadable music packs. Contemporary reporting also documents licensed independent music entering Tap Tap Tour through MuseIQ's independent-artist catalog.
@@ -270,12 +335,11 @@ LICENSED MUSIC
 The license should cover the actual package the project intends to distribute, not merely permission to "play the song."
 
 
-
 ## Digital interactive use: rhythm game vs. standalone adventure
 
 For **50 Ways to Leave Another**, the licensing model should distinguish between simply including a song in a game and making the song an interactive game object.
 
-The U.S. Copyright Office specifically identifies video games as audiovisual works for which incorporating music requires the relevant synchronization and master-use permissions; there is no general compulsory sync/master license for this use. citeturn0search35
+The U.S. Copyright Office specifically identifies video games as audiovisual works for which incorporating music requires the relevant synchronization and master-use permissions; there is no general compulsory sync/master license for this use. 
 
 ### A. Standalone adventure / soundtrack use
 
@@ -340,7 +404,7 @@ If the game also spatializes, remixes, stems, or otherwise materially transforms
 
 For our project, define three separate digital-use modes:
 
-```
+~~~
 MODE 1 — SOUNDTRACK
 Song
   ↓
@@ -361,7 +425,7 @@ Song
 Dedicated interactive environment
   ↓
 Music drives exploration, visuals, events, or progression
-```
+~~~
 
 Mode 3 matters because a standalone adventure can be more than a conventional soundtrack placement. If the music itself drives visual events, exploration, puzzles, timing, or progression, the agreement should describe those uses specifically.
 
@@ -393,7 +457,7 @@ That gives an independent artist a much clearer choice than asking them to sign 
 
 For the 50 Ways project, a track record should therefore contain:
 
-```
+~~~
 TRACK
   artist:
   title:
@@ -436,7 +500,7 @@ EVIDENCE
   rights confirmations:
   approved master:
   approved chart/data:
-```
+~~~
 
 **Do not let the filename, MP3/WAV, Bandcamp URL, or chart file itself become the rights record.** The rights record is the authority; the media package is the implementation.
 
