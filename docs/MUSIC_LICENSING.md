@@ -252,6 +252,33 @@ The case is **Baphometrix — "Returning to the Void — Paragon Homage."** The 
 
 The artist's creative identity is also useful to the project architecture: Baphometrix is described here as an **artistic second-life character/persona**. That persona is an experiential identity; it should not be confused with the legal person or with ownership of copyrights. Contracts and rights records should always name the actual rights holders and authorized signatories.
 
+### Production record: Baphometrix — "Returning to the Void — Paragon Homage"
+
+This record is intentionally more specific than a generic licensing example. The project history documents an actual online commission and completed release.
+
+- **Commission path:** I asked **Dylan at Producer Dojo** to identify someone who could create the track.
+- **Brief supplied:** I provided the relevant Paragon assets and the creative/production parameters for the assignment.
+- **Delivery:** **Baphometrix** accepted the assignment and delivered the completed track on time and above the expected standard.
+- **Production environment:** The collaboration was conducted **entirely online through Discord**. This was not an in-person studio collaboration and should not be described as an IRL production.
+- **Creative method:** Baphometrix worked out the track's "lyrics" from **Paragon game emotes**. This is a useful example of an artist translating game-native material into an original musical work rather than simply dropping game audio into a soundtrack.
+- **Review:** The finished song was subjected to peer review through a GameSoundCon-related submission/review route available at the time. The feedback was relatively light and focused on the **mid-range**, with the appropriate treatment depending on the genre and sonic target being pursued. This should be preserved as peer review, not represented as a formal GameSoundCon endorsement or certification. GameSoundCon's current public materials describe game-audio submissions and critique/education programs, but do not independently establish this historical review of this particular track. citeturn0search4turn0search11
+- **Outcome:** The work reached a completed song and was released.
+- **Rights/credits:** The project's records continue to recognize Baphometrix's credit and the agreed role/rights history for this work. Future uses should still be governed by a current written license with the actual rights holder(s); a historical credit or release is not, by itself, a blanket grant of new game rights.
+- **Compensation principle:** The parties understood that each contributor's defined role would be properly compensated. Creative labor was treated as production work with economic value, not as free labor in exchange for exposure.
+
+### Baphometrix — current public contact / credit trail
+
+For discovery and credit verification, maintain the artist's public-facing profiles alongside the internal rights record:
+
+- **SoundCloud:** [Baphometrix](https://soundcloud.com/baphometrix) — the profile identifies Baphometrix as a producer working in bass music, hip hop, future bass, and future pop, and identifies a connection to Producer Dojo. citeturn0search0
+- **Audius:** [Baphometrix on Audius](https://audius.co/baphometrix) — retain the artist profile and exact release page as part of the public credit trail.
+- **Track:** [“Returning to the Void — Paragon Homage”](https://audius.co/baphometrix/returning-to-the-void-paragon-homage-15668) — retain the exact release URL in the project rights record.
+- **Beatport:** [Baphometrix artist page](https://www.beatport.com/artist/baphometrix/702855) — an additional public artist/distribution identity. citeturn1search8
+
+These are **contact/discovery and credit references**, not evidence that a platform owns the music or that the artist automatically controls every right in every recording. Audius states that uploads generally require ownership of both composition and sound-recording copyright unless the uploader has explicit written permission or a licensing arrangement. citeturn0search12
+
+For this case specifically, the internal evidence packet should retain the original Discord communications, assignment/brief, supplied-asset provenance, delivery, review notes, compensation agreement, final approved master, release URL, and rights/credit confirmations.
+
 ### What the collaboration demonstrated
 
 The important result was not simply "we found a song online." The collaboration demonstrated that a distributed team could:
