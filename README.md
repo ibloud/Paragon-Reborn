@@ -9,6 +9,8 @@ Technical roadmap and project hub for an open-source MOBA concept built around E
 - Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 - Roadmap: [ROADMAP.md](ROADMAP.md)
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Tarot / card-system research: [docs/paragon-tarot-research 2.md](docs/paragon-tarot-research%202.md)
+- Tarot LWB: [docs/paragon-tarot-LWB.pdf](docs/paragon-tarot-LWB.pdf)
 
 ## Repository responsibility
 
