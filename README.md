@@ -3,6 +3,8 @@
 Technical roadmap and project hub for an open-source MOBA concept built around Epic Games' released Paragon assets, a modular card system, and companion web prototypes.
 
 > **Project status: concept and pre-production.** This repository currently hosts the public roadmap and static project site. It does not yet contain a playable MOBA, an Unreal Engine project, or a reusable game framework.
+>
+> **Validation role:** Return to the Void / Paragon ReBorn is also a controlled game-development sandbox and proving environment for bringing older or previously paused projects up to current technical, rights, provenance, accessibility, data, and production standards. It validates the process; it does not grant rights or make inherited material production-cleared.
 
 - Project site: https://ibloud.github.io/Paragon-Reborn/
 - Project context: https://sites.google.com/view/rtn2thevoid/journey
