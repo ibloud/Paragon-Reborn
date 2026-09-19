@@ -15,3 +15,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run repository checks
         run: python3 scripts/validate_repo.py
+      - name: Validate Phase 1 rules contract
+        run: python3 scripts/validate_rules.py
