@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "hero": {
+    "id": "void-walker",
+    "max_health": 1000,
+    "starting_resource": 100
+  },
+  "ability": {
+    "id": "void-lance",
+    "resource_cost": 20,
+    "cooldown_seconds": 5,
+    "base_damage": 120
+  },
+  "card": {
+    "id": "tarot-strength",
+    "effect": {
+      "damage_bonus": 30
+    }
+  },
+  "fixture": {
+    "target_health": 500,
+    "cast_at_seconds": [0, 1, 5, 6],
+    "expected": {
+      "damage_per_successful_cast": 150,
+      "resource_after_casts": 40,
+      "cooldown_after_successful_cast": 5
+    }
+  }
+}
