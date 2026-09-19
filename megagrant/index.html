@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Return to the Void — MegaGrant Readiness</title>
+<meta name="description" content="Return to the Void: Epic MegaGrant readiness, project evidence, and ways to contribute or comment.">
+<meta property="og:title" content="Return to the Void — MegaGrant Readiness">
+<meta property="og:description" content="A direct project landing page for grant-readiness, technical evidence, contributors, and reviewers.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://ibloud.github.io/Paragon-Reborn/megagrant/">
+<style>
+:root{--bg:#0a0a0f;--surface:#111118;--border:rgba(255,255,255,.1);--text:#e8e8f0;--muted:#9a9aac;--accent:#7c6af7;--accent2:#c86dd7;--mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:#b8adff}main{max-width:920px;margin:auto;padding:48px 24px 80px}.eyebrow,.label{font:11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}h1{font-size:clamp(2.4rem,7vw,5rem);line-height:1.02;font-weight:400;letter-spacing:-.04em;margin:18px 0}h1 em{font-style:normal;color:#b8adff}h2{font-size:1.35rem;font-weight:500;margin:0 0 12px}.lede{font-size:1.15rem;color:var(--muted);max-width:680px}.status{margin:30px 0;padding:18px 20px;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:6px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0}.card{padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:8px}.card p,.card li{color:var(--muted)}.card ul{padding-left:20px}.cta{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 44px}.button{display:inline-block;padding:11px 15px;border:1px solid var(--border);border-radius:5px;text-decoration:none}.primary{background:var(--accent);border-color:var(--accent);color:white}.small{font-size:.88rem;color:var(--muted)}table{width:100%;border-collapse:collapse;margin-top:14px}th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--border);vertical-align:top}th{font:10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}footer{margin-top:55px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem}@media(max-width:650px){.grid{grid-template-columns:1fr}main{padding:32px 18px 60px}}
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">// RETURN TO THE VOID / PROJECT LANDING PAGE</p>
+  <h1>Build the proof.<br><em>Then invite the world in.</em></h1>
+  <p class="lede">This page is a direct, shareable entry point for people who want to understand the project, review the architecture, contribute, or comment on its path toward a future Epic MegaGrant submission.</p>
+
+  <div class="status">
+    <strong>Grant status — 2026 Cycle 2</strong><br>
+    Epic's 2026 Cycle 2 submission window closed September 4, 2026. The published review period runs September 5–December 4, with notices scheduled for December 7–11. The next submission dates have not yet been published by Epic.
+    <p class="small">Source: <a href="https://www.unrealengine.com/megagrants">Epic MegaGrants</a>.</p>
+  </div>
+
+  <div class="cta">
+    <a class="button primary" href="https://github.com/ibloud/Paragon-Reborn/issues">Comment / open an issue ↗</a>
+    <a class="button" href="https://github.com/ibloud/Paragon-Reborn/blob/main/CONTRIBUTING.md">Contribute ↗</a>
+    <a class="button" href="https://github.com/ibloud/Paragon-Reborn">Review the repository ↗</a>
+  </div>
+
+  <div class="grid">
+    <section class="card">
+      <h2>What exists now</h2>
+      <ul>
+        <li>Versioned engine-independent rules contract.</li>
+        <li>Deterministic first-slice fixture and validator.</li>
+        <li>Repository checks and CI.</li>
+        <li>Documented architecture and first vertical-slice target.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>What still needs proof</h2>
+      <ul>
+        <li>One playable Unreal Engine hero.</li>
+        <li>One replicated ability with resource/cooldown behavior.</li>
+        <li>One compact test arena and target.</li>
+        <li>One card modifier consuming shared data.</li>
+        <li>Repeatable setup, automated smoke test, and captured demo.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section>
+    <p class="label">Evidence path</p>
+    <h2>The application should follow the work, not substitute for it.</h2>
+    <p class="small">The project treats grant readiness as an evidence problem: a reproducible implementation, tests, documentation, and a clear demonstration should exist before claims of capability are made.</p>
+    <table>
+      <thead><tr><th>Milestone</th><th>Evidence to publish</th></tr></thead>
+      <tbody>
+        <tr><td>Rules contract</td><td>Schema, deterministic fixture, validator, documented expected outcome.</td></tr>
+        <tr><td>Vertical slice</td><td>Playable hero, ability, arena, card modifier, local setup.</td></tr>
+        <tr><td>Validation</td><td>Automated smoke test and repeatable demonstration.</td></tr>
+        <tr><td>Network proof</td><td>Server-authoritative execution, two-client replication, latency/reconciliation notes.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section style="margin-top:42px">
+    <p class="label">Open invitation</p>
+    <h2>Review the premise. Challenge the architecture. Help build the proof.</h2>
+    <p class="small">Comments, technical review, documentation fixes, test contributions, and implementation work are welcome. The repository distinguishes documented facts and working evidence from proposed future systems.</p>
+    <div class="cta">
+      <a class="button primary" href="https://github.com/ibloud/Paragon-Reborn/issues">Provide comment / feedback ↗</a>
+      <a class="button" href="https://github.com/ibloud/Paragon-Reborn/blob/main/ROADMAP.md">Read the roadmap ↗</a>
+      <a class="button" href="https://github.com/ibloud/Paragon-Reborn/blob/main/docs/EPIC_MEGAGRANTS.md">Read grant readiness ↗</a>
+    </div>
+  </section>
+
+  <footer>
+    This landing page is intentionally stable as a direct promotional/review link. Its dated grant information is updated when Epic publishes a new cycle. It does not imply that a grant application is open.
+  </footer>
+</main>
+</body>
+</html>
