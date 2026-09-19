@@ -9,6 +9,7 @@ Technical roadmap and project hub for an open-source MOBA concept built around E
 - Project site: https://ibloud.github.io/Paragon-Reborn/
 - Project context: https://sites.google.com/view/rtn2thevoid/journey
 - Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- Legacy project validation: [docs/LEGACY_PROJECT_VALIDATION.md](docs/LEGACY_PROJECT_VALIDATION.md)
 - Roadmap: [ROADMAP.md](ROADMAP.md)
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Participant learning paths: [docs/PARTICIPANT_LEARNING_PATHS.md](docs/PARTICIPANT_LEARNING_PATHS.md)
