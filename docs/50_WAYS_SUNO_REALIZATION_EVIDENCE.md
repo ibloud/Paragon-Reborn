@@ -36,9 +36,34 @@ The screenshot supplied for this evidence record shows:
 - **FACT — SCREENSHOT:** A Suno restriction notice is displayed for removed account content.
 - **NOT ESTABLISHED:** The screenshot alone does not establish the user's Suno subscription tier on the original creation date.
 - **NOT ESTABLISHED:** The screenshot alone does not establish the precise reason for the moderation decision beyond Suno's displayed statement that the content was removed for violating its Community Guidelines.
-- **NOT ESTABLISHED:** The screenshot alone does not establish whether the displayed track is the same generation identified elsewhere by a specific Suno song ID; that should be matched against the song page/history/export if available.
+- **NOT ESTABLISHED:** The screenshot alone does not establish whether the displayed track is the same generation identified elsewhere by a specific Suno song ID; that should be matched against the song page/history if available.
 
-## 2. Creative-development status reported by the user
+## 2. Stream-only demonstration / no download
+
+The user reports that **they have not downloaded the Suno track**.
+
+The track has instead been used for demonstration through the **streaming links provided by Suno**. No locally downloaded WAV, MP3, stem, or other audio export should therefore be represented as part of the user's evidence set unless a separate download is later documented.
+
+This distinction matters for the provenance record:
+
+**Suno-hosted stream**
+→ demonstration/reference
+
+is different from:
+
+**Suno export/download**
+→ locally possessed audio artifact
+
+At present, the evidence record should describe the Suno audio as **Suno-hosted and streamed for demonstration**, not as a downloaded source file.
+
+### Evidence status
+
+- **USER-REPORTED:** The Suno track has not been downloaded by the user.
+- **USER-REPORTED:** Demonstrations have used Suno-provided streaming links.
+- **NOT ESTABLISHED:** No local audio artifact, WAV, MP3, stems, or other export should be presumed to exist in the user's possession.
+- **FACTUAL DISTINCTION:** A streaming link and a downloaded audio file are separate evidence artifacts and should not be conflated.
+
+## 3. Creative-development status reported by the user
 
 The user reports that, since creation of the track:
 
@@ -54,7 +79,7 @@ This should be preserved as the user's account unless creation history, version 
 - **USER-REPORTED:** The track was used/planned as a vocal-arrangement/title-track exploration for prospective performers.
 - **USER-REPORTED:** The provenance story begins with the human-generated/original version.
 
-## 3. Do not collapse the layers
+## 4. Do not collapse the layers
 
 The project should continue to distinguish:
 
@@ -69,7 +94,7 @@ The project should continue to distinguish:
 
 A later AI realization does not erase the earlier human-originating evidence. Conversely, the existence of a human-originating source does not by itself establish what copyright protection, ownership, or contractual rights attach to every later AI-generated element.
 
-## 4. Evidence to preserve
+## 5. Evidence to preserve
 
 For the Suno layer, preserve where available:
 
@@ -81,10 +106,11 @@ For the Suno layer, preserve where available:
 - prompt/style description;
 - whether any audio/reference material was uploaded;
 - subscription tier and billing record **at the time of creation**;
-- download/export records;
-- WAV/MP3/stems and their SHA-256 hashes;
-- screenshots showing the track and account state;
+- the Suno-hosted streaming URL(s) used for demonstration;
+- screenshots showing the track, account state, and restriction notice;
 - any moderation/restriction notice and appeal status;
 - any Suno version history, remix, extend, cover, or regeneration history.
 
-The current screenshot is useful evidence of **present account state and the moderation notice**, but it should not be used as proof of historical subscription status or as a substitute for the original creation/export records.
+Do **not** list a downloaded audio file, WAV/MP3/stems, or a local SHA-256 hash as existing evidence unless such an artifact is actually downloaded and preserved later.
+
+The current screenshot is useful evidence of **present account state, the displayed track, and the moderation notice**, but it should not be used as proof of historical subscription status or as a substitute for the original creation/history records.
