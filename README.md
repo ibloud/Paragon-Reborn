@@ -31,6 +31,8 @@ Related repositories own distinct concerns:
 
 Capabilities described in this repository are **planned** unless they link to working source, automated tests, or a published demo.
 
+The validation sandbox follows the same evidence rule: a prototype, asset download, historical repository, or generated document is not by itself evidence of rights clearance, authorship, endorsement, or production acceptance.
+
 ## What Epic's release provides
 
 Epic released Paragon art and audio assets for use in Unreal Engine projects. These include characters, animations, effects, environments, and supporting visual material.
