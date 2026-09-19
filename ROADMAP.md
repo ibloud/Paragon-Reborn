@@ -23,6 +23,17 @@ Exit criterion: the same example data produces documented outcomes in a headless
 
 **Current evidence:** `docs/rules/` contains the v1 contract, a deterministic first-slice fixture, and a dependency-free validator.
 
+## Phase 1.5 — Legacy project validation
+
+- [ ] Inventory one older or paused project and its inherited material
+- [ ] Record provenance and rights/license evidence for each retained dependency
+- [ ] Separate independently rebuilt systems from inherited/third-party material
+- [ ] Run current-standard gap analysis for accessibility, data, security, documentation, and production readiness
+- [ ] Record unresolved restrictions and replacement paths
+- [ ] Produce a validation case study showing discovery → verification → correction → control → retest
+
+Exit criterion: the validation record identifies what can be rebuilt, what remains restricted or pending, and what evidence is required before production handoff.
+
 ## Phase 2 — Vertical slice
 
 - [ ] One playable hero
