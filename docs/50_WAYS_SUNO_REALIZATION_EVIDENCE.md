@@ -63,7 +63,37 @@ At present, the evidence record should describe the Suno audio as **Suno-hosted 
 - **NOT ESTABLISHED:** No local audio artifact, WAV, MP3, stems, or other export should be presumed to exist in the user's possession.
 - **FACTUAL DISTINCTION:** A streaming link and a downloaded audio file are separate evidence artifacts and should not be conflated.
 
-## 3. Creative-development status reported by the user
+
+## 3. Bluesky contemporaneous-sharing evidence
+
+A direct Bluesky post supplied for this evidence record has been located:
+
+**Post:** https://bsky.app/profile/ibloud.xyz/post/3movmumq2nc2f
+
+**Account:** @ibloud.xyz / I. B. Loud IVXX
+
+**Post text:**
+
+> Suno likes my song in the key of Billie
+> I know I should wait for a human …
+>
+> Right?
+>
+> #womenintech
+
+The post explicitly connects **Suno** with **the user's song** and the phrase **“in the key of Billie.”** It is therefore a contemporaneous public-sharing artifact relevant to the documented Suno realization and the previously missing “key of Billie” post.
+
+### Evidence status
+
+- **FACT — DIRECT POST URL:** The Bluesky post is identified as `3movmumq2nc2f` on @ibloud.xyz.
+- **FACT — USER-SUPPLIED POST TEXT:** The post states, “Suno likes my song in the key of Billie” and continues, “I know I should wait for a human … Right? #womenintech”.
+- **LOCATED:** The previously missing “key of Billie” post has now been identified.
+- **NOT YET ESTABLISHED FROM THE POST TEXT ALONE:** The exact Bluesky timestamp, the exact Suno URL/song ID attached to the post, and whether the post's “Suno” reference resolves specifically to song ID `719271fd-266c-4bee-9787-c3ba1bc370b7`.
+- **NOT YET ESTABLISHED:** Whether the post date is exactly the same day as the Suno generation date. That relationship should be verified from the Bluesky timestamp and Suno creation history rather than inferred.
+
+This specific first-party social post URL should be preserved together with a screenshot or archived capture showing its timestamp and any attached/link metadata.
+
+## 4. Creative-development status reported by the user
 
 The user reports that, since creation of the track:
 
