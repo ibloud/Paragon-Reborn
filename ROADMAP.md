@@ -14,12 +14,14 @@ This roadmap prioritizes evidence over breadth. Dates are intentionally omitted 
 
 ## Phase 1 — Rules contract
 
-- [ ] Define versioned hero, ability, and card schemas
-- [ ] Specify deterministic rule examples
-- [ ] Add schema validation and behavioral tests
-- [ ] Identify the canonical implementation for each shared rule
+- [x] Define versioned hero, ability, and card schemas
+- [x] Specify deterministic rule examples
+- [x] Add schema validation and behavioral tests
+- [x] Identify the canonical implementation for each shared rule
 
 Exit criterion: the same example data produces documented outcomes in a headless test suite.
+
+**Current evidence:** `docs/rules/` contains the v1 contract, a deterministic first-slice fixture, and a dependency-free validator.
 
 ## Phase 2 — Vertical slice
 
