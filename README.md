@@ -7,6 +7,7 @@ Technical roadmap and project hub for an open-source MOBA concept built around E
 - Project site: https://ibloud.github.io/Paragon-Reborn/
 - Project context: https://sites.google.com/view/rtn2thevoid/journey
 - Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- Microsoft workspace boundary: [docs/MICROSOFT_WORKSPACE.md](docs/MICROSOFT_WORKSPACE.md)
 - Roadmap: [ROADMAP.md](ROADMAP.md)
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Participant learning paths: [docs/PARTICIPANT_LEARNING_PATHS.md](docs/PARTICIPANT_LEARNING_PATHS.md)
