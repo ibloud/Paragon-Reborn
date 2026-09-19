@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rtn2thevoid.dev/schemas/rules-contract-v1.json",
+  "title": "Return to the Void Rules Contract v1",
+  "type": "object",
+  "required": ["version", "hero", "ability", "card", "fixture"],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "hero": {
+      "$ref": "#/$defs/hero"
+    },
+    "ability": {
+      "$ref": "#/$defs/ability"
+    },
+    "card": {
+      "$ref": "#/$defs/card"
+    },
+    "fixture": {
+      "$ref": "#/$defs/fixture"
+    }
+  },
+  "$defs": {
+    "hero": {
+      "type": "object",
+      "required": ["id", "max_health", "starting_resource"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "max_health": { "type": "integer", "minimum": 1 },
+        "starting_resource": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "ability": {
+      "type": "object",
+      "required": ["id", "resource_cost", "cooldown_seconds", "base_damage"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "resource_cost": { "type": "integer", "minimum": 0 },
+        "cooldown_seconds": { "type": "number", "exclusiveMinimum": 0 },
+        "base_damage": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "card": {
+      "type": "object",
+      "required": ["id", "effect"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "effect": {
+          "type": "object",
+          "required": ["damage_bonus"],
+          "properties": {
+            "damage_bonus": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "fixture": {
+      "type": "object",
+      "required": ["target_health", "cast_at_seconds", "expected"],
+      "properties": {
+        "target_health": { "type": "integer", "minimum": 1 },
+        "cast_at_seconds": {
+          "type": "array",
+          "items": { "type": "number", "minimum": 0 },
+          "minItems": 1
+        },
+        "expected": {
+          "type": "object",
+          "required": ["damage_per_successful_cast", "resource_after_casts", "cooldown_after_successful_cast"],
+          "properties": {
+            "damage_per_successful_cast": { "type": "integer", "minimum": 0 },
+            "resource_after_casts": { "type": "integer", "minimum": 0 },
+            "cooldown_after_successful_cast": { "type": "number", "minimum": 0 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
