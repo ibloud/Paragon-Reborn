@@ -12,6 +12,18 @@ This document describes the proposed system boundary. Components are planned unl
 | veiled-dominion-engine | Browser prototypes, deck/rule experiments, lightweight visualization | Production Unreal rendering or authoritative game servers |
 | training | Contributor preparation and scored exercises | Production runtime code |
 
+## Legacy-project validation boundary
+
+Paragon ReBorn can serve as a controlled proving environment for bringing older or previously paused projects up to current standards. The validation path is:
+
+~~~
+OLD PROJECT → INVENTORY → PROVENANCE / RIGHTS → DEPENDENCIES → GAP ANALYSIS → CONTROLLED REBUILD → PLAYABILITY / ACCESSIBILITY / DATA TEST → DOCUMENTED RESULT → PRODUCTION DECISION
+~~~
+
+This is a process boundary, not a rights grant. Historical presence, technical availability, repository history, or prototype success does not establish ownership, permission, commercial use, grant use, trademark rights, or production acceptance.
+
+The detailed evidence matrix lives in [LEGACY_PROJECT_VALIDATION.md](LEGACY_PROJECT_VALIDATION.md).
+
 ## Shared rules contract
 
 Engine-independent schemas should describe heroes, cards, abilities, costs, cooldowns, and status effects. Fixtures should contain expected outcomes. Browser and Unreal implementations may differ internally, but both must satisfy the same behavioral examples.
