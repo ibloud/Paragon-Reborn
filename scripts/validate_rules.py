@@ -45,10 +45,13 @@ if expected.get("damage_per_successful_cast") != expected_damage:
 
 casts = scenario.get("cast_at_seconds", [])
 cooldown = ability.get("cooldown_seconds", 0)
-successful = sum(
-    1 for i, t in enumerate(casts)
-    if i == 0 or t >= casts[i - 1] + cooldown
-)
+successful = 0
+last_successful_cast = None
+for t in casts:
+    if last_successful_cast is None or t >= last_successful_cast + cooldown:
+        successful += 1
+        last_successful_cast = t
+
 expected_resource = hero.get("starting_resource", 0) - successful * ability.get("resource_cost", 0)
 if expected.get("resource_after_casts") != expected_resource:
     errors.append("expected resource does not match successful casts and resource cost")
