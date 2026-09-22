@@ -22,7 +22,7 @@
     "cast_at_seconds": [0, 1, 5, 6],
     "expected": {
       "damage_per_successful_cast": 150,
-      "resource_after_casts": 40,
+      "resource_after_casts": 60,
       "cooldown_after_successful_cast": 5
     }
   }
