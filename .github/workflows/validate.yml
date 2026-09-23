@@ -13,7 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
       - name: Run repository checks
-        run: python3 scripts/validate_repo.py
+        run: python scripts/validate_repo.py
       - name: Validate Phase 1 rules contract
-        run: python3 scripts/validate_rules.py
+        run: python scripts/validate_rules.py
