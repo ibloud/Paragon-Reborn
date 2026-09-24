@@ -2,12 +2,15 @@
 """Dependency-free repository checks."""
 from html.parser import HTMLParser
 from pathlib import Path
+import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
     "README.md", "LICENSE", "CONTRIBUTING.md", "ROADMAP.md",
-    "docs/ARCHITECTURE.md", "docs/PARAGON_ASSET_NOTES.md", "index.html",
+    "docs/ARCHITECTURE.md", "docs/AGENT-SECURITY.md",
+    "docs/PARAGON_ASSET_NOTES.md", "index.html",
+    "security/agent_policy.py", "tests/test_agent_policy.py",
 ]
 
 class PageParser(HTMLParser):
@@ -44,6 +47,16 @@ if not page.title_text:
 readme = (ROOT / "README.md").read_text(encoding="utf-8")
 if "Project status: concept and pre-production" not in readme:
     errors.append("README must state project status")
+
+if not errors:
+    result = subprocess.run(
+        [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode:
+        errors.append("security/rules tests failed:\n" + result.stdout + result.stderr)
 
 if errors:
     print("\n".join(f"ERROR: {error}" for error in errors))
