@@ -1,5 +1,7 @@
 # Return to the Void
 
+> **NAMING / TRADEMARK STATUS: RESTRICTED — PARAGON / PARAGON REBORN IS AN INTERNAL WORKING NAME AND IS NOT CLEARED FOR PUBLIC BRAND USE.** See [docs/LEGAL-NAMING-STATUS.md](docs/LEGAL-NAMING-STATUS.md). This repository designation is a project-control label, not a legal opinion.
+
 Technical roadmap and project hub for an open-source MOBA concept built around Epic Games' released Paragon assets, a modular card system, and companion web prototypes.
 
 > **Project status: concept and pre-production.** This repository currently hosts the public roadmap and static project site. It does not yet contain a playable MOBA, an Unreal Engine project, or a reusable game framework.
@@ -8,6 +10,7 @@ Technical roadmap and project hub for an open-source MOBA concept built around E
 - Project context: https://sites.google.com/view/rtn2thevoid/journey
 - Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 - Roadmap: [ROADMAP.md](ROADMAP.md)
+- Legal / naming status: [docs/LEGAL-NAMING-STATUS.md](docs/LEGAL-NAMING-STATUS.md)
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Participant learning paths: [docs/PARTICIPANT_LEARNING_PATHS.md](docs/PARTICIPANT_LEARNING_PATHS.md)
 - Independent music licensing: [docs/MUSIC_LICENSING.md](docs/MUSIC_LICENSING.md)
