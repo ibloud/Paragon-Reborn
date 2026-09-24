@@ -8,6 +8,7 @@ This roadmap prioritizes evidence over breadth. Dates are intentionally omitted 
 - [x] Document repository boundaries
 - [x] Add contribution guidance and automated repository checks
 - [x] Separate licensing from Paragon asset notes
+- [x] Add agent-security contract, fail-closed policy reference, containment model, and tests
 - [ ] Protect `main` and require pull-request review
 - [ ] Create issue and pull-request templates
 - [ ] Publish a maintained project board
@@ -40,8 +41,9 @@ Exit criterion: a new contributor can run and verify the slice from written inst
 - [ ] Two-client replication test
 - [ ] Basic latency and reconciliation measurements
 - [ ] Threat model for cheating and trust boundaries
+- [ ] Runtime implementation of agent identity, capability, action, provenance, and egress boundaries
 
-Exit criterion: two remote clients complete the documented gameplay scenario consistently.
+Exit criterion: two remote clients complete the documented gameplay scenario consistently, and any agentic tooling remains fail-closed at every external action boundary.
 
 ## Non-goals until the vertical slice passes
 
