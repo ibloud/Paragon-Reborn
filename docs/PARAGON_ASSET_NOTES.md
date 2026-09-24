@@ -7,3 +7,8 @@ A functional MOBA still requires independently developed gameplay rules, ability
 Projects such as Predecessor and the discontinued Paragon: The Overprime demonstrate that teams can build new games around released assets, but their engineering work is not part of this repository.
 
 This repository does not distribute Paragon assets. Contributors are responsible for reviewing and complying with Epic Games' current terms before downloading or using them. This page is project documentation, not legal advice.
+
+
+## Current integration gate
+
+For any production use of Paragon-derived Fab assets, follow [`docs/PARAGON_ASSET_INTEGRATION.md`](PARAGON_ASSET_INTEGRATION.md). The contract is the authoritative project compliance/production gate for provenance, current listing/license verification, branding, repository handling, Unreal import, and release checks.
