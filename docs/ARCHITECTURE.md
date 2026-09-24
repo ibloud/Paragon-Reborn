@@ -23,10 +23,22 @@ For the current card/tarot design reference, see
 
 The browser layer is a design and companion surface. Unreal Engine 5 is the proposed production client/runtime for high-fidelity assets, Gameplay Ability System integration, physics, and replication. Server authority must be explicit for gameplay-affecting state.
 
+## Agent security boundary
+
+Future agentic tooling is governed by [Agent Security Contract](AGENT-SECURITY.md). The security model is enforcement machinery underneath project governance, not an autonomous governance layer.
+
+Authority flows downward only:
+
+`HUMAN GOVERNANCE → PROJECT GOVERNANCE → AGENT AUTHORITY → TOOL CAPABILITY → INDIVIDUAL ACTION`
+
+The invariant `OBSERVE → UNDERSTAND → SUGGEST` remains intact. Missing authorization, identity, capability, resource scope, governance, provenance, or containment state fails closed. Behavioral anomaly detection may contain or escalate but may never grant authority.
+
+The reference implementation lives under `security/`; its tests define acceptance criteria for a future runtime sandbox, identity boundary, capability broker, and egress controls.
+
 ## Decision rules
 
 - Prefer a small verified behavior over an untested abstraction.
-- Treat networking and persistence as trust boundaries.
+- Treat networking, persistence, agent identity, capabilities, and egress as trust boundaries.
 - Do not claim cross-engine parity without shared fixtures and test results.
 - Keep proprietary or restricted assets outside source control.
 - Record consequential architecture changes as short decision documents under `docs/decisions/`.
