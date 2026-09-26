@@ -17,7 +17,7 @@ This document describes the proposed system boundary. Components are planned unl
 Engine-independent schemas should describe heroes, cards, abilities, costs, cooldowns, and status effects. Fixtures should contain expected outcomes. Browser and Unreal implementations may differ internally, but both must satisfy the same behavioral examples.
 
 For the current card/tarot design reference, see
-[Paragon Tarot — Complete Production Research](paragon-tarot-research%202.md).
+[Paragon Tarot — Complete Production Research](paragon-tarot-research.md).
 
 ## Runtime boundary
 

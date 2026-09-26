@@ -11,7 +11,7 @@ Technical roadmap and project hub for an open-source MOBA concept built around E
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Participant learning paths: [docs/PARTICIPANT_LEARNING_PATHS.md](docs/PARTICIPANT_LEARNING_PATHS.md)
 - Independent music licensing: [docs/MUSIC_LICENSING.md](docs/MUSIC_LICENSING.md)
-- Tarot / card-system research: [docs/paragon-tarot-research 2.md](docs/paragon-tarot-research%202.md)
+- Tarot / card-system research: [docs/paragon-tarot-research 2.md](docs/paragon-tarot-research.md)
 - Tarot LWB: [docs/paragon-tarot-LWB.pdf](docs/paragon-tarot-LWB.pdf)
 
 ## Repository responsibility
