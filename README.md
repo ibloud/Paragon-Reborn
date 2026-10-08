@@ -11,7 +11,7 @@ Financial support is optional and sustains infrastructure, maintenance, accessib
 [Full mission and participation terms](https://github.com/ibloud/ibloud.github.io/blob/main/MISSION.md).
 
 
-Technical roadmap and project hub for an open-source MOBA concept built around Epic Games' released Paragon assets, a modular card system, and companion web prototypes.
+Technical roadmap and project hub for an original hero-card game experiment: tarot-informed build choices, consequential stories, and companion prototypes. Historical Paragon research records the starting point; new production content follows an independent character and world design path.
 
 > **Project status: concept and pre-production.** This repository currently hosts the public roadmap and static project site. It does not yet contain a playable MOBA, an Unreal Engine project, or a reusable game framework.
 
@@ -22,8 +22,10 @@ Technical roadmap and project hub for an open-source MOBA concept built around E
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Participant learning paths: [docs/PARTICIPANT_LEARNING_PATHS.md](docs/PARTICIPANT_LEARNING_PATHS.md)
 - Independent music licensing: [docs/MUSIC_LICENSING.md](docs/MUSIC_LICENSING.md)
-- Tarot / card-system research: [docs/paragon-tarot-research 2.md](docs/paragon-tarot-research.md)
-- Tarot LWB: [docs/paragon-tarot-LWB.pdf](docs/paragon-tarot-LWB.pdf)
+- Current original hero-card direction: [design and staged prototype](docs/ORIGINAL_HERO_CARD_DIRECTION.md)
+- Original-content transition: [rights and provenance boundary](docs/ORIGINAL_CONTENT_RIGHTS.md)
+- Historical tarot research (not production clearance): [research archive](docs/paragon-tarot-research.md)
+- Historical Tarot LWB (not cleared for new production): [docs/paragon-tarot-LWB.pdf](docs/paragon-tarot-LWB.pdf)
 
 ## Repository responsibility
 
@@ -64,7 +66,7 @@ This boundary is a proposal, not evidence that each system is already implemente
 
 The first meaningful proof should be a deliberately small vertical slice:
 
-1. one controllable hero;
+1. one controllable original hero using original or generic placeholder assets;
 2. one replicated ability;
 3. one compact test arena;
 4. one card modifier represented by shared data;

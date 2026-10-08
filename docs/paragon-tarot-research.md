@@ -1,4 +1,7 @@
 # PARAGON TAROT — COMPLETE PRODUCTION RESEARCH DOCUMENT
+
+> **Historical research / adaptation archive — 2026-10-08 status.** This document preserves earlier assignments. It is not the current production roster, verified canon for every imagined scene, or permission to manufacture/distribute a deck. Its production and licensing claims require fresh asset-specific review. New content follows [the original hero-card direction](ORIGINAL_HERO_CARD_DIRECTION.md) and [rights boundary](ORIGINAL_CONTENT_RIGHTS.md). Do not ingest this archive into the new story generator.
+
 ### Source: Return to the Void / Heroes Page + Epic Games Paragon Asset Universe
 ### Intended Printer: MakePlayingCards.com
 ### Prepared for AI/Design System Handoff
