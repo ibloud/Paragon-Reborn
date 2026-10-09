@@ -16,8 +16,11 @@ This document describes the proposed system boundary. Components are planned unl
 
 Engine-independent schemas should describe heroes, cards, abilities, costs, cooldowns, and status effects. Fixtures should contain expected outcomes. Browser and Unreal implementations may differ internally, but both must satisfy the same behavioral examples.
 
-For the current card/tarot design reference, see
-[Paragon Tarot — Complete Production Research](paragon-tarot-research.md).
+For the new hero-card experiment, see
+[Original hero cards and consequential stories](ORIGINAL_HERO_CARD_DIRECTION.md) and
+[original-content rights boundary](ORIGINAL_CONTENT_RIGHTS.md).
+The [historical tarot research](paragon-tarot-research.md) is provenance, not a production roster.
+This direction does not alter the v1 contract or canonical four-player Veiled Dominion rules.
 
 ## Runtime boundary
 
