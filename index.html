@@ -23,7 +23,7 @@
     --border: rgba(255,255,255,0.08);
     --border-strong: rgba(255,255,255,0.15);
     --text: #e8e8f0;
-    --text-muted: #6b6b80;
+    --text-muted: #b6b6c8;
     --text-dim: #9a9aac;
     --accent: #7c6af7;
     --accent-glow: rgba(124,106,247,0.15);
@@ -49,7 +49,7 @@
     background: var(--bg);
     color: var(--text);
     font-family: var(--sans);
-    font-size: 16px;
+    font-size:1rem;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
@@ -69,14 +69,14 @@
   }
   .nav-logo {
     font-family: var(--mono);
-    font-size: 13px;
+    font-size:1rem;
     color: var(--text-muted);
     letter-spacing: 0.05em;
   }
   .nav-logo span { color: var(--accent); }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a {
-    font-size: 13px;
+    font-size:1rem;
     color: var(--text-muted);
     text-decoration: none;
     letter-spacing: 0.03em;
@@ -89,7 +89,7 @@
   section { padding: 6rem 2rem; max-width: 960px; margin: 0 auto; scroll-margin-top: 7rem; }
   .section-label {
     font-family: var(--mono);
-    font-size: 11px;
+    font-size:1rem;
     color: var(--accent);
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -118,14 +118,14 @@
   }
   .hero-eyebrow {
     font-family: var(--mono);
-    font-size: 12px;
+    font-size:1rem;
     color: var(--text-muted);
     letter-spacing: 0.1em;
     margin-bottom: 1.5rem;
   }
   h1 {
     font-size: clamp(2.5rem, 6vw, 4.5rem);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.08;
     letter-spacing: -0.02em;
     margin-bottom: 1.5rem;
@@ -142,7 +142,7 @@
     color: var(--text-dim);
     max-width: 540px;
     margin-bottom: 2.5rem;
-    font-weight: 300;
+    font-weight: 400;
   }
   .hero-tags {
     display: flex;
@@ -151,7 +151,7 @@
   }
   .tag {
     font-family: var(--mono);
-    font-size: 11px;
+    font-size:1rem;
     padding: 0.3rem 0.75rem;
     border: 1px solid var(--border-strong);
     border-radius: 3px;
@@ -178,7 +178,7 @@
   .analysis-cell.full { grid-column: 1 / -1; }
   .cell-label {
     font-family: var(--mono);
-    font-size: 11px;
+    font-size:1rem;
     color: var(--text-muted);
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -190,7 +190,7 @@
     margin-bottom: 0.5rem;
   }
   .cell-body {
-    font-size: 0.875rem;
+    font-size:1rem;
     color: var(--text-dim);
     line-height: 1.65;
   }
@@ -209,11 +209,11 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 1.5rem;
-    font-size: 0.875rem;
+    font-size:1rem;
   }
   .checklist thead th {
     font-family: var(--mono);
-    font-size: 10px;
+    font-size:1rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--text-muted);
@@ -233,9 +233,9 @@
     vertical-align: top;
   }
   .checklist td:first-child { color: var(--text); font-weight: 500; }
-  .check-yes { color: var(--green); font-family: var(--mono); font-size: 12px; }
-  .check-no { color: var(--red); font-family: var(--mono); font-size: 12px; }
-  .action-text { font-size: 0.8rem; }
+  .check-yes { color: var(--green); font-family: var(--mono); font-size:1rem; }
+  .check-no { color: var(--red); font-family: var(--mono); font-size:1rem; }
+  .action-text { font-size:1rem; }
 
   /* STRATEGY SECTION */
   .strategy-cols {
@@ -262,7 +262,7 @@
   .strategy-card.ue::before { background: var(--accent-2); }
   .strategy-num {
     font-family: var(--mono);
-    font-size: 10px;
+    font-size:1rem;
     color: var(--text-muted);
     letter-spacing: 0.1em;
     margin-bottom: 0.75rem;
@@ -274,7 +274,7 @@
   }
   .strategy-items { list-style: none; }
   .strategy-items li {
-    font-size: 0.875rem;
+    font-size:1rem;
     color: var(--text-dim);
     padding: 0.4rem 0;
     border-bottom: 1px solid var(--border);
@@ -287,7 +287,7 @@
     content: '→';
     color: var(--text-muted);
     font-family: var(--mono);
-    font-size: 11px;
+    font-size:1rem;
     flex-shrink: 0;
     margin-top: 2px;
   }
@@ -308,13 +308,13 @@
   .about-text p {
     color: var(--text-dim);
     margin-bottom: 1rem;
-    font-size: 0.95rem;
+    font-size:1rem;
     line-height: 1.75;
   }
   .about-links { display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
   .about-link {
     font-family: var(--mono);
-    font-size: 12px;
+    font-size:1rem;
     color: var(--accent);
     text-decoration: none;
     border: 1px solid rgba(124,106,247,0.3);
@@ -335,7 +335,7 @@
   }
   .repos-header {
     font-family: var(--mono);
-    font-size: 11px;
+    font-size:1rem;
     color: var(--text-muted);
     padding: 0.75rem 1rem;
     border-bottom: 1px solid var(--border);
@@ -348,12 +348,12 @@
   .repo-item:last-child { border-bottom: none; }
   .repo-name {
     font-family: var(--mono);
-    font-size: 12px;
+    font-size:1rem;
     color: var(--accent);
     margin-bottom: 0.25rem;
   }
   .repo-desc {
-    font-size: 0.8rem;
+    font-size:1rem;
     color: var(--text-muted);
   }
 
@@ -363,7 +363,7 @@
     padding: 2rem;
     text-align: center;
     font-family: var(--mono);
-    font-size: 11px;
+    font-size:1rem;
     color: var(--text-muted);
     letter-spacing: 0.06em;
   }
@@ -383,7 +383,25 @@
     .strategy-cols { grid-template-columns: 1fr; }
     .about-inner { grid-template-columns: 1fr; }
   }
+
+/* Owner direction: readable defaults; preserve the established font families. */
+html { font-size:112.5%; }
+html[data-reading-size="large"] { font-size:137.5%; }
+body { font-size:1rem; line-height:1.7; }
+h1,h2,h3 { letter-spacing:normal; }
+p,li,td { overflow-wrap:anywhere; }
+button[data-reading-toggle] { font:inherit; min-width:48px; min-height:48px; padding:.5rem .8rem; border:1px solid currentColor; border-radius:.3rem; background:var(--surface); color:var(--text); cursor:pointer; }
+button[data-reading-toggle]:focus-visible { outline:3px solid #b8adff; outline-offset:4px; }
+button[data-reading-toggle][aria-pressed="true"] { border-width:3px; }
+a { text-underline-offset:.18em; }
+
+nav { position:sticky; flex-wrap:wrap; gap:1rem; }
+main { padding-top:0; }
+.nav-links { flex-wrap:wrap; gap:.5rem 1rem; }
+.nav-links a,.about-link { display:inline-flex; align-items:center; min-height:48px; }
+
 </style>
+<script src="assets/reading-size.js" defer></script>
 </head>
 <body>
 
@@ -395,6 +413,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="https://github.com/ibloud" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
   </ul>
+<button type="button" data-reading-toggle aria-pressed="false" hidden>Larger text</button>
 </nav>
 
 <main>
@@ -502,7 +521,7 @@
 
     <div style="margin-top: 2rem; padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; border-left: 3px solid var(--accent);">
       <div class="cell-label">Design System Note</div>
-      <p style="font-size: 0.875rem; color: var(--text-dim); line-height: 1.7;">
+      <p style="font-size:1rem; color: var(--text-dim); line-height: 1.7;">
         Tarot provides themes for hero tensions, tactical choices and story opportunities. Original writing and art
         must establish an independent world; card numbers do not establish balance.
         Read the <a href="docs/ORIGINAL_HERO_CARD_DIRECTION.md">new design direction</a> and
