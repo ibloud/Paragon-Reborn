@@ -8,14 +8,14 @@ Projects such as Predecessor and the discontinued Paragon: The Overprime demonst
 
 This repository does not distribute Paragon assets. Contributors are responsible for reviewing and complying with Epic Games' current terms before downloading or using them. This page is project documentation, not legal advice.
 
+## Original-content transition — 2026-10-08
 
-## Current integration gate
+The next prototype uses original characters and generic placeholders rather than importing Epic assets. See [the rights boundary](ORIGINAL_CONTENT_RIGHTS.md) and [owner-approved direction](ORIGINAL_HERO_CARD_DIRECTION.md). Historical names are research references, not new product identities.
 
-For any production use of Paragon-derived Fab assets, follow [`docs/PARAGON_ASSET_INTEGRATION.md`](PARAGON_ASSET_INTEGRATION.md). The contract is the authoritative project compliance/production gate for provenance, current listing/license verification, branding, repository handling, Unreal import, and release checks.
+## Optional asset-integration proposal
 
+[PARAGON_ASSET_INTEGRATION.md](PARAGON_ASSET_INTEGRATION.md) is the separate reviewed proposal in [PR #13](https://github.com/ibloud/Paragon-Reborn/pull/13), not merged authority or authorization to reverse the October 8 decision. Its internal ACTIVE label describes the proposal; it does not establish an acquired asset entitlement or approved import.
 
 ## Asset evidence and viability — 16 November 2026
 
-The [commercial viability and asset-strategy assessment](PROJECT_VIABILITY.md) identifies Terra and Greystone as the specifically reviewed packs, distinguishes historical roster research from acquired assets, and compares licensed Epic production bases with original art and placeholders. No numerical ROI or bait-and-switch finding is established.
-
-The default branch's [October 8 original-content decision](https://github.com/ibloud/Paragon-Reborn/blob/3ddb52994be4450c11c54ec07d2288372587a375/docs/decisions/2026-10-08-original-tarot-direction.md) remains the current direction: original characters and placeholders for the next proof. This older integration proposal is optional, not authorization to reverse that decision. Its internal ACTIVE status does not mean PR #13 has merged.
+The [existing viability assessment](PROJECT_VIABILITY.md) distinguishes Terra and Greystone as specifically reviewed packs from acquired assets or a final roster. It compares an optional licensed production base with original art/placeholders. Original writing does not transfer ownership of an underlying Epic model. Successor-game balance complaints do not establish a defect in Epic asset files. No numerical ROI, acquisition entitlement or bait-and-switch finding is established.

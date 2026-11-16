@@ -25,7 +25,7 @@ Exit criterion: the same example data produces documented outcomes in a headless
 
 ## Phase 2 — Vertical slice
 
-- [ ] One playable hero
+- [ ] One playable original hero with generic/original assets
 - [ ] One ability with cooldown and resource cost
 - [ ] One small arena and target dummy
 - [ ] One card modifier loaded from shared data
@@ -51,3 +51,19 @@ Exit criterion: two remote clients complete the documented gameplay scenario con
 - esports infrastructure;
 - large asset imports;
 - custom launcher or account platform.
+
+## Original hero-card and story track — 2026-10-08
+
+Direction: [original hero-card design](docs/ORIGINAL_HERO_CARD_DIRECTION.md).
+
+- [x] Document tarot/build/story separation and original-IP transition.
+- [x] Mark historical roster research as non-production.
+- [ ] Review original character briefs and provenance records.
+- [ ] Propose separately versioned exact mechanics without changing v1 fixtures.
+- [ ] Prove one original hero, one modifier and one consequential authored choice.
+- [ ] Verify deterministic replay, invalid-choice rejection and safe fallback.
+- [ ] Expand to three heroes / twelve cards only after the first proof passes.
+- [ ] Human accessibility and balance playtest; publish evidence and limitations.
+- [ ] Audit historical public branding/downloads and clear intended release scope.
+
+No playable tarot system or completed IP migration is claimed.
