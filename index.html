@@ -37,6 +37,8 @@
 
   html { scroll-behavior: smooth; }
 
+  a { color: var(--accent-2); }
+
   a:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 4px;
@@ -84,7 +86,7 @@
 
   /* LAYOUT */
   main { padding-top: 60px; }
-  section { padding: 6rem 2rem; max-width: 960px; margin: 0 auto; }
+  section { padding: 6rem 2rem; max-width: 960px; margin: 0 auto; scroll-margin-top: 7rem; }
   .section-label {
     font-family: var(--mono);
     font-size: 11px;
@@ -373,8 +375,8 @@
   }
 
   @media (max-width: 680px) {
-    nav { padding: 1rem; }
-    .nav-links { gap: 1rem; }
+    nav { padding: 1rem; flex-wrap: wrap; gap: .5rem; }
+    .nav-links { gap: 1rem; flex-wrap: wrap; }
     section { padding: 4rem 1.25rem; }
     .analysis-grid { grid-template-columns: 1fr; }
     .analysis-cell.full { grid-column: auto; }
@@ -402,8 +404,8 @@
     <p class="hero-eyebrow">// RETURN TO THE VOID — rtn2thevoid</p>
     <h1>Original heroes.<br><em>Meaningful choices.</em><br>Stories shaped by play.</h1>
     <p class="hero-sub">
-      A project hub for an original hero-card game experiment with tarot-informed builds and branching stories.
-      Design and pre-production: these mechanics are proposed, not a playable game.
+      Accessible hero-based play with meaningful build choices and authored consequences, without requiring players to begin in competitive matchmaking.
+      This is our positioning hypothesis—not a playable experience. Return to the Void remains in concept and pre-production.
     </p>
     <div class="hero-tags">
       <span class="tag accent">veiled-dominion-engine</span>
@@ -417,109 +419,73 @@
 
   <!-- ANALYSIS -->
   <section id="analysis">
-    <div class="section-label">Engine Evaluation</div>
-
+    <h2 class="section-label">Proposal and evidence</h2>
+    <p class="hero-sub">Prepare a build, understand its trade-offs, and see an authored choice change what follows. A solo/cooperative learning route is proposed; no new mode or playable hero is demonstrated here.</p>
     <div class="analysis-grid">
       <div class="analysis-cell">
-        <div class="cell-label">Usable Now</div>
-        <div class="cell-title">WebGL Rendering Pipeline</div>
-        <div class="cell-body">
-          Browser-native WebGL runtime immediately applicable for lightweight hero visualizers,
-          3D card inspection tools, and tactical prototypes — no Unreal download required.
-        </div>
+        <div class="cell-label">Demonstrated in repository checks</div>
+        <h3 class="cell-title">A small rules fixture</h3>
+        <p class="cell-body">Versioned schemas and a deterministic fixture exercise an ability, resource cost, cooldown and card modifier. This is a headless rule example, not a playable combat loop, WebGL engine or Unreal demo.</p>
       </div>
       <div class="analysis-cell">
-        <div class="cell-label">Usable Now</div>
-        <div class="cell-title">Turn / State Logic Framework</div>
-        <div class="cell-body">
-          Core state management maps cleanly to card activation systems, tarot-style rules,
-          and Duet chess mechanics. Turn order and state sync are ready to reuse.
-        </div>
-      </div>
-      <div class="analysis-cell">
-        <div class="cell-label">Usable Now</div>
-        <div class="cell-title">Lightweight Asset Loading</div>
-        <div class="cell-body">
-          Asset ingestion routines handle lower-poly models, textures, and UI overlays well —
-          ideal for web frontends and companion apps hosted on LoptrLab.com.
-        </div>
-      </div>
-      <div class="analysis-cell">
-        <div class="cell-label">Gap — Requires UE5</div>
-        <div class="cell-title">Original Visual Production</div>
-        <div class="cell-body">
-          The next prototype uses original or generic placeholders. Final models, effects and animation
-          require independent art direction, provenance review and performance testing.
-        </div>
+        <div class="cell-label">Documented proposal</div>
+        <h3 class="cell-title">Original heroes and meaningful choices</h3>
+        <p class="cell-body">Tarot is a vocabulary for tensions and approaches, not a power ranking. The next proof stays small: one original hero, one modifier and one authored choice, using original or generic placeholders.</p>
       </div>
       <div class="analysis-cell full">
-        <div class="cell-label">Gap — Must Build</div>
-        <div class="cell-title">Network Replication & Real-Time Physics</div>
-        <div class="cell-body">
-          High-tickrate client-side prediction, server reconciliation, and continuous 3D collision
-          detection are native to Unreal Engine — not present in the current web engine.
-          These must be authored from scratch for a full 3v3+ action game.
-        </div>
+        <div class="cell-label">Research questions · source review pending</div>
+        <h3 class="cell-title">Build preparation without unnecessary barriers</h3>
+        <p class="cell-body">Can preparing a build stay satisfying without locked counters, unequal gameplay access or excessive learning load? Can abilities explain their impact, failure and counterplay clearly? The supplied player-discussion and review pages could not be retrieved in this review. These are questions to test, not verified player findings or representative market research.</p>
       </div>
     </div>
 
-    <!-- CHECKLIST TABLE -->
-    <table class="checklist">
-      <thead>
-        <tr>
-          <th>Component</th>
-          <th>Epic's Assets</th>
-          <th>Action Required</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>3D Hero Models & Rigging</td>
-          <td><span class="check-yes"><span class="status-dot dot-green"></span>YES</span></td>
-          <td class="action-text">Ready to import in Unreal Engine</td>
-        </tr>
-        <tr>
-          <td>Hero Animations & VFX</td>
-          <td><span class="check-yes"><span class="status-dot dot-green"></span>YES</span></td>
-          <td class="action-text">Built into character packages</td>
-        </tr>
-        <tr>
-          <td>Environment & Props</td>
-          <td><span class="check-yes"><span class="status-dot dot-green"></span>YES</span></td>
-          <td class="action-text">Agora / Monolith packs on Fab (1,500+ assets)</td>
-        </tr>
-        <tr>
-          <td>Card UI / 2D Tarot Art</td>
-          <td><span class="check-no"><span class="status-dot dot-red"></span>NO</span></td>
-          <td class="action-text">Custom 2D illustration & UI frame design required</td>
-        </tr>
-        <tr>
-          <td>Core Game Code & GAS</td>
-          <td><span class="check-no"><span class="status-dot dot-red"></span>NO</span></td>
-          <td class="action-text">C++ / Blueprint architecture from scratch</td>
-        </tr>
-        <tr>
-          <td>Card Engine / Deck Logic</td>
-          <td><span class="check-no"><span class="status-dot dot-red"></span>NO</span></td>
-          <td class="action-text">Custom data tables & blueprint mechanics</td>
-        </tr>
-      </tbody>
-    </table>
+    <h2 class="section-label" id="player-feedback">Player feedback → response → proof</h2>
+    <p class="cell-body">The following comparison frames the requested feedback themes as research questions while source verification is pending. Proposed responses already exist in the original hero-card direction; none is presented as a completed feature.</p>
+    <div class="analysis-grid">
+      <article class="analysis-cell">
+        <h3 class="cell-title">Build choice and fair access</h3>
+        <p class="cell-body"><strong>Feedback to verify:</strong> enthusiasm for preparing builds versus objections to locked counters and unequal access.</p>
+        <p class="cell-body"><strong>Proposed response:</strong> equal access to gameplay cards during tests, multiple builds and changes at defined safe checkpoints.</p>
+        <p class="cell-body"><strong>Evidence needed:</strong> voluntary build-choice tests showing useful alternatives, understandable counters and manageable learning effort.</p>
+      </article>
+      <article class="analysis-cell">
+        <h3 class="cell-title">Readable combat and counterplay</h3>
+        <p class="cell-body"><strong>Feedback to verify:</strong> differing durability, second-life and counterplay preferences in successor-game discussions—not evidence of defects in Epic asset files.</p>
+        <p class="cell-body"><strong>Proposed response:</strong> explicit costs, counters and effect descriptions, with plain-language labels and accessible presentation.</p>
+        <p class="cell-body"><strong>Evidence needed:</strong> tutorial comprehension, ability-feedback and failure-understanding tests. These remain research gaps, not assigned new systems.</p>
+      </article>
+      <article class="analysis-cell full">
+        <h3 class="cell-title">Story with clear limits</h3>
+        <p class="cell-body"><strong>Feedback to verify:</strong> whether the intended audience wants tarot-informed stories or a solo/cooperative introduction at all.</p>
+        <p class="cell-body"><strong>Proposed response:</strong> authored consequences, no hidden competitive advantages from narrative choices, and understandable play when narrative presentation is disabled.</p>
+        <p class="cell-body"><strong>Evidence needed:</strong> observed completion, choice comprehension and return interest. Story/tarot-specific demand and willingness to pay remain unvalidated.</p>
+      </article>
+    </div>
+    <p class="cell-body">Read the <a href="docs/PROJECT_VIABILITY.md">viability assessment and dated source-access register</a> or the <a href="docs/ORIGINAL_HERO_CARD_DIRECTION.md">existing design proposal</a>. Individual comments and review scores cannot establish market size or product-market fit.</p>
+
+    <h2 class="section-label">Before larger spending</h2>
+    <p class="hero-sub">The first decision is whether a capped prototype earns further investment—not whether to finance a roster or a live-service MOBA.</p>
+    <p class="cell-body">A qualitative audience lead exists in the supplied research links; their contents remain unverified here. Product-market fit and ROI are unproven. The successor landscape includes Predecessor and historical Paragon successor projects; this is not an empty market. Grants, donations and crowdfunding are funding, not proof of operating profit or customer demand.</p>
+    <p class="cell-body">Terra and Greystone are specifically reviewed asset packs, not confirmed acquisitions or a final roster. The approved next proof uses original characters/placeholders. Optional licensed-asset use needs separate rights review; original writing does not transfer ownership of an Epic model.</p>
+    <div class="about-links">
+      <a class="about-link" href="megagrant/">Grant and prototype evidence</a>
+      <a class="about-link" href="docs/PROJECT_VIABILITY.md">Costs, break-even and open questions</a>
+    </div>
   </section>
 
   <!-- STRATEGY -->
   <section id="strategy">
-    <div class="section-label">Integration Strategy</div>
+    <h2 class="section-label">Proposed integration strategy</h2>
 
     <div class="strategy-cols">
       <div class="strategy-card web">
         <div class="strategy-num">LAYER 01 — WEB</div>
         <div class="strategy-title">veiled-dominion-engine</div>
         <ul class="strategy-items">
-          <li>Interactive Deck Builder & Lore Viewer with 3D hero card inspection</li>
-          <li>Rapid prototype for game rules, card interactions, and tactical logic</li>
-          <li>Companion app integration at LoptrLab.com</li>
-          <li>Validate C++ port targets before Unreal migration</li>
+          <li>Possible future deck/lore experiments; no playable integration demonstrated</li>
+          <li>Keep the existing versioned rules fixture as the evidence baseline</li>
+          <li>Any companion integration requires its own scope and acceptance evidence</li>
+          <li>Do not infer cross-engine parity or shared runtime from a repository link</li>
         </ul>
       </div>
       <div class="strategy-card ue">
@@ -529,7 +495,7 @@
           <li>Proposed original hero models and independently authored abilities</li>
           <li>Original visual effects with accessibility and provenance review</li>
           <li>Network replication & physics via Unreal's native systems</li>
-          <li>Clean C++ module architecture for open-source contribution</li>
+          <li>No new engine migration, account service or matchmaking assignment</li>
         </ul>
       </div>
     </div>
@@ -547,7 +513,7 @@
 
   <!-- ABOUT -->
   <section id="about">
-    <div class="section-label">About</div>
+    <h2 class="section-label">About</h2>
     <div class="about-inner">
       <div class="about-text">
         <h2>Dominique — ibloud</h2>
@@ -560,7 +526,7 @@
         <p>
           <em>Return to the Void</em> is a working title for a pre-production research project.
           Its next experiment develops independent characters, tactical card choices and consequential stories.
-          Earlier research remains documented as history. The new design does not claim a completed game,
+          The Diary of Death’s Daughter manga, its matriarch and mythology are Loptr Lab’s creative foundation. Related projects retain their own personalities; this lineage does not insert Rebirth here or merge fictional canon or mechanics. Earlier research remains history. This project does not claim a completed game,
           rights clearance, or endorsement by another studio.
         </p>
         <div class="about-links">
@@ -573,7 +539,7 @@
         <div class="repos-header">ACTIVE REPOS</div>
         <div class="repo-item">
           <div class="repo-name">veiled-dominion-engine</div>
-          <div class="repo-desc">WebGL game engine & Duet 2-player framework</div>
+          <div class="repo-desc">Separate four-player rules/engine project; no shared runtime implied</div>
         </div>
         <div class="repo-item">
           <div class="repo-name">violets-revenge</div>

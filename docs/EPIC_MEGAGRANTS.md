@@ -72,3 +72,9 @@ Epic Games — Epic MegaGrants: https://www.unrealengine.com/megagrants
 Read the [project viability assessment](PROJECT_VIABILITY.md) for the asset evidence, three production choices, cost categories, break-even framework and unresolved rights. No validated paid demand, numerical ROI or completed Unreal slice is established by this review. Funding is not proof of commercial return.
 
 MegaGrants should support a specific development milestone, not be described as a license waiver or a cure for our separate repository licensing conflict. Confirm legal-cost eligibility with Epic before including it as an approved expense. The published 2026 submission window remains closed; do not invent a 2027 date. The original-character/placeholder decision on current main remains in force while optional asset PR #13 is reviewed.
+
+## Player/audience and prototype evidence — site update, 16 November 2026
+
+The homepage and existing MegaGrant landing page now distinguish the positioning hypothesis, documented design responses, the validated rules fixture and missing player/commercial proof. Read [PROJECT_VIABILITY.md](PROJECT_VIABILITY.md) for the requested player/developer source register: those external pages were blocked during this update, so no new discussion consensus, current review sentiment or dated developer change is asserted. The schedule above is retained as the existing dated record, not freshly verified program access or a new application opportunity.
+
+Tutorial comprehension, combat feedback and audience/willingness-to-pay evidence remain research gaps. They are not newly assigned systems or approved scope expansion. Preserve the one-original-hero, one-modifier, one-authored-choice proof; a larger grant or production spend follows evidence and a separate decision.

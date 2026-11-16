@@ -22,10 +22,17 @@ Technical roadmap and project hub for an original hero-card game experiment: tar
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Participant learning paths: [docs/PARTICIPANT_LEARNING_PATHS.md](docs/PARTICIPANT_LEARNING_PATHS.md)
 - Independent music licensing: [docs/MUSIC_LICENSING.md](docs/MUSIC_LICENSING.md)
+- Player/audience questions, evidence limits and commercial decision: [existing viability assessment](docs/PROJECT_VIABILITY.md)
 - Current original hero-card direction: [design and staged prototype](docs/ORIGINAL_HERO_CARD_DIRECTION.md)
 - Original-content transition: [rights and provenance boundary](docs/ORIGINAL_CONTENT_RIGHTS.md)
 - Historical tarot research (not production clearance): [research archive](docs/paragon-tarot-research.md)
 - Historical Tarot LWB (not cleared for new production): [docs/paragon-tarot-LWB.pdf](docs/paragon-tarot-LWB.pdf)
+
+## Positioning to test
+
+Accessible hero-based play with meaningful build choices and authored consequences, without requiring players to begin in competitive matchmaking. This is a concept/pre-production hypothesis. The solo/cooperative route, accessible teaching and combat-feedback responses are documented proposals, not a playable release. Tarot/story-specific demand and willingness to pay remain unvalidated. The first spending decision is whether the capped one-hero/one-modifier/one-authored-choice proof earns further investment.
+
+The [viability assessment](docs/PROJECT_VIABILITY.md) preserves the cost/break-even framework and separates research leads, source-access failures, demonstrated rules fixtures and missing audience evidence. It does not treat grants, donations or crowdfunding as customer demand. The Diary of Death’s Daughter manga and matriarch are the studio's creative foundation; that lineage does not insert Rebirth into this game's canon or mechanics.
 
 ## Repository responsibility
 

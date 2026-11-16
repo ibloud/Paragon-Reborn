@@ -6,7 +6,44 @@ Review date: 16 November 2026. Status: pre-production assessment, not a revenue 
 The project has an original hero-card/story premise and documented rules experiments. A commercial return is not demonstrated: this review found no validated paid demand, complete production budget, confirmed distribution agreement or playable Unreal vertical slice in the inspected project sources.
 The next investment decision is whether a small, capped proof can establish audience interest, technical feasibility and credible cost. A full roster or live-service MOBA is not the current milestone.
 
-Pitch My Project's development-package guidance calls for a clear story/protagonist, audience, credible team, schedule, budget and marketing/distribution approach. Applied here, the art is supporting evidence; it cannot substitute for a playable loop or a commercial model. This is an adaptation of film-pitch guidance, not a claim that film economics predict game sales.
+A reviewable pitch should make the premise, intended audience, team, schedule, costs and route to market legible. Art supports that case; it cannot substitute for a playable loop or commercial evidence. Earlier PR #13 applied Pitch My Project’s film-pitch references; their substantive pages could not be re-read in this update. No new source-verified claim about that guidance or transfer of film economics to games is made.
+
+## Positioning and audience evidence — update, 16 November 2026
+
+**Hypothesis:** “Accessible hero-based play with meaningful build choices and authored consequences, without requiring players to begin in competitive matchmaking.” A solo/cooperative introduction is an existing proposal, not an implemented mode or a new assignment. The one-hero, one-modifier, one-authored-choice proof remains the next milestone; do not expand it to a roster, account platform, matchmaking service or monetization implementation.
+
+The supplied discussion/review links are a **qualitative audience signal to investigate**, not validated findings in this update: all requested external pages returned proxy access denials before their contents could be read. No individual quote, vote, review count, balance claim or representative-market inference is adopted from them. The comparison below records the owner's requested research themes and connects them to existing local design proposals, not a claimed synthesis of unread threads.
+
+| Player feedback question / verification status | Existing proposed response | Evidence still needed |
+| --- | --- | --- |
+| Build preparation versus locked counters, unequal access and learning load — supplied original-Paragon and successor discussion leads; contents/dates/disagreement unverified | All gameplay cards equally available during tests; multiple builds; changes at defined safe checkpoints; no essential counter locked behind rarity or a single suit | Read each complete discussion, record date/game/version and disagreement; then observe intended players preparing, understanding and revising builds |
+| Durability, second life and contrasting playstyle preferences — supplied Greystone successor thread; unverified | Existing card specifications require explicit cost, cooldown, effect, duration, cancellation and opponent response | Verify the actual discussion and contrasting preferences; test understandable failure and meaningful responses without treating successor balance as a defect in Epic asset files |
+| Terra counterplay and ability clarity — supplied successor discussions and Omeda patch notes; unverified | Plain-language labels, explicit costs/counters, accessible presentation; no hidden competitive benefit from narrative choices | Read dated developer changes and whole threads; tutorial comprehension and combat-feedback observations are research gaps, not completed features or newly approved milestones |
+| Appetite for authored consequences, tarot and solo/cooperative learning — not established by general MOBA discussion | Existing original story/build separation and optional narrative presentation; story does not secretly change competitive stats | Direct audience comprehension, voluntary completion, return interest and eventually a lawful willingness-to-pay test; no validated tarot/story-specific demand |
+
+The market is not empty: the repository documents Predecessor and historical successor projects including the discontinued Paragon: The Overprime. A current Steam page, even if readable, would not isolate demand for this proposed product. This update does not establish current review sentiment, market share or commercial performance of any successor.
+
+Do not claim that Epic never understood its audience. The owner-approved original-direction document attributes clarity, ease of use and impact goals to the February 3, 2017 Epic/PlayStation article. That is a source-linked local record; direct article retrieval is blocked in this update. Omeda's supplied Terra patch-note URL is likewise a lead requiring substantive dated verification before its changes are described as fact. Original Paragon decisions and successor implementations must not be conflated.
+
+### Source-access register
+
+Attempted 16 November 2026. All eleven supplied URLs returned **proxy CONNECT 403**; the page contents were not retrieved. No source publication date, thread consensus or review distribution was inferred from an identifier, title or search snippet. The date in the Epic URL is not a substitute for reading its article. Full-thread disagreement and primary developer changes remain pending.
+
+| Source / context | Requested URL | Result and permitted use |
+|---|---|---|
+| Original Paragon build discussion | [Read source](https://www.reddit.com/r/paragon/comments/otl59s/) | Unretrieved; retain as a research lead, omit unsupported findings |
+| Predecessor build discussion | [Read source](https://www.reddit.com/r/PredecessorGame/comments/znska8/) | Unretrieved; retain as a research lead, omit unsupported findings |
+| Historical original-Paragon user reviews | [Read source](https://www.metacritic.com/game/paragon/user-reviews/) | Unretrieved; retain as a research lead, omit unsupported findings |
+| Predecessor Greystone discussion | [Read source](https://www.reddit.com/r/PredecessorGame/comments/1xqowzn/anyone_but_him/) | Unretrieved; retain as a research lead, omit unsupported findings |
+| Predecessor Terra discussion A | [Read source](https://www.reddit.com/r/PredecessorGame/comments/1e1qy3s/) | Unretrieved; retain as a research lead, omit unsupported findings |
+| Predecessor Terra discussion B | [Read source](https://www.reddit.com/r/PredecessorGame/comments/1es7mj1/) | Unretrieved; retain as a research lead, omit unsupported findings |
+| Current Predecessor store/review context | [Read source](https://store.steampowered.com/app/961200/Predecessor/) | Unretrieved; retain as a research lead, omit unsupported findings |
+| Epic / PlayStation redesign priorities, URL dated 2017-02-03 | [Read source](https://blog.playstation.com/2017/02/03/paragon-whats-next-in-2017/) | Unretrieved; retain as a research lead, omit unsupported findings |
+| Omeda Terra patch notes 1.17.2, publication date unverified | [Read source](https://www.predecessorgame.com/en-US/news/patch-notes/Patch_Notes_1.17.2) | Unretrieved; retain as a research lead, omit unsupported findings |
+| Pitch My Project resources | [Read source](https://www.pitchmyproject.com/resources) | Unretrieved; retain as a research lead, omit unsupported findings |
+| Pitch My Project six-step pitch reference | [Read source](https://www.pitchmyproject.com/blog/six-steps-to-an-engaging-pitch-deck) | Unretrieved; retain as a research lead, omit unsupported findings |
+
+No new participant dataset, tracking or outreach is created. Existing contribution terms govern voluntary feedback; record observations without private health, identity or correspondence data. Grant/donation/crowdfunding receipts are not validation of player demand or operating profit. The existing cost and break-even framework below is preserved without inserting prices, sales forecasts or new budgets.
 
 ## Asset evidence already in the ecosystem
 | Source | What is documented | What is not established |
@@ -67,7 +104,9 @@ Pitch a feasible original project and milestone to MegaGrants if it fits the pro
 The Veiled Dominion MIT/CC/proprietary wording conflict is a separate repository issue, not evidence that Epic changed its asset license.
 For this asset path, seek games/IP technology-transactions counsel with open-source, Unreal/Fab and chain-of-title experience; entertainment/publishing support is relevant to cross-media rights. Prepare the acquisition records, contributor/commission agreements and intended uses first. Thoolie may inform production paperwork but is not retained counsel or a clearance service.
 
-## Sources checked 16 November 2026
+## Earlier PR #13 source record — dated 16 November 2026
+
+The references below were already recorded in PR #13 before this site update. They are preserved as that review’s evidence trail, not claimed as independently re-retrieved here. The source-access register above reports the current attempt and its limitations.
 - [Pitch My Project resources](https://www.pitchmyproject.com/resources) and [six pitch steps](https://www.pitchmyproject.com/blog/six-steps-to-an-engaging-pitch-deck).
 - [Epic Paragon release](https://www.unrealengine.com/paragon).
 - [Terra](https://www.fab.com/listings/5ea6bcb6-e43e-4bbe-813f-c19d8c907565) and [Greystone](https://www.fab.com/listings/122fd7bf-6f12-4304-a930-cccbbacdaebc).
@@ -76,3 +115,12 @@ For this asset path, seek games/IP technology-transactions counsel with open-sou
 - [Thoolie](https://thoolie.com/).
 
 This is public evidence and decision preparation. No financial return, acquisition entitlement, legal opinion, grant acceptance, production readiness or Epic affiliation is asserted.
+
+
+## Site-update verification — 16 November 2026
+
+The existing homepage and MegaGrant landing page were updated on the PR #13 review branch after reconciling current main. The October 8 original direction, rights document and decision are unchanged from main. Security PR #12 and the separate Veiled Dominion licensing review are outside this change.
+
+Local checks passed: `python3 scripts/validate_repo.py`, `python3 scripts/validate_rules.py` (two successful casts, 150 damage each, 60 resource remaining), and 39 local HTML/Markdown targets. Installed Chromium 154.0.8037.57 exercised both pages at 320, 390, 820 and 1440 CSS pixels with reduced motion: no document overflow, duplicate IDs or page errors; one H1/main landmark per page; visible focus on the first eight keyboard links; homepage anchor headings remain below fixed navigation. The existing palette/components and canonical URLs are preserved. This is local automation and screenshot inspection, not physical iPad/Safari/VoiceOver, independent player acceptance or a verified Vercel/production deployment.
+
+Direct external research retrieval was denied as recorded above. Direct Vercel preview verification and the PR-description update must be reported separately from a branch push; no production release is authorized or implied. No new system, asset import, monetization code or LinkedIn post was created.

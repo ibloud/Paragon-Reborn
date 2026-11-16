@@ -28,10 +28,9 @@ The browser layer is a design and companion surface. Unreal Engine 5 is the prop
 
 ## Asset integration boundary
 
-Third-party Paragon-derived assets are governed by
-[Paragon Asset Integration Contract](PARAGON_ASSET_INTEGRATION.md).
+The next proof uses original characters/placeholders under the [October 8 decision](decisions/2026-10-08-original-tarot-direction.md). The optional [Paragon Asset Integration Contract](PARAGON_ASSET_INTEGRATION.md) is a proposal in PR #13, not merged authority or import permission.
 
-That contract is a production/compliance gate, not a gameplay or constitutional rule. It requires current listing/license verification, provenance tracking, separation of third-party assets from original project IP, and release checks before distribution.
+That proposed contract describes production/compliance checks, not gameplay or constitutional rules. It requires current listing/license verification, provenance tracking, separation of third-party assets from original project IP, and release checks before distribution.
 
 The public repository must not become a redistribution channel for Epic/Fab assets. The exact applicable listing and license control any particular asset.
 
@@ -42,4 +41,4 @@ The public repository must not become a redistribution channel for Epic/Fab asse
 - Do not claim cross-engine parity without shared fixtures and test results.
 - Keep proprietary or restricted assets outside source control.
 - Record consequential architecture changes as short decision documents under `docs/decisions/`.
-- For any Paragon-derived asset, follow `docs/PARAGON_ASSET_INTEGRATION.md` before import or release.
+- Any optional Paragon-derived asset path requires a separate approved decision, acquisition-specific rights review and reconciliation of the proposed integration contract before import or release.

@@ -1,8 +1,10 @@
 # Decision: Paragon asset integration boundary
 
 **Date:** 2026-09-24  
-**Status:** Adopted for implementation review  
+**Status:** Historical proposal for implementation review in PR #13; not merged authority
 **Scope:** Paragon-Reborn third-party Paragon-derived asset integration
+
+The later [October 8 decision](2026-10-08-original-tarot-direction.md) retains original characters/placeholders for the next proof. This optional asset proposal does not override it.
 
 ## Decision
 

@@ -1,9 +1,11 @@
 # Paragon Asset Integration Contract
 
-**Status:** ACTIVE PRODUCTION / COMPLIANCE GATE  
+**Status:** PROPOSED optional production/compliance gate — PR #13 remains under review
 **Scope:** Paragon-Reborn project, Epic Games Paragon-derived Fab assets, and any future Unreal Engine 5 vertical-slice integration  
 **Authority:** Project compliance/production contract. This document does not define game mechanics, gameplay authority, or project IP ownership.  
-**Last verified:** 2026-09-24
+**Historical verification date recorded by this proposal:** 2026-09-24
+
+The October 8 [original-character decision](decisions/2026-10-08-original-tarot-direction.md) remains in force. No asset import is assigned or authorized. Listing observations below are dated; this update does not reverify acquisition-specific terms.
 
 ## 1. Purpose
 
